@@ -10,9 +10,11 @@
 
   <link rel="stylesheet" href="index.css">
   <script src='index.js'></script>
+  <script src='projects.js'></script>
 </head>
 
-<body onload="scrollEvents()">
+<body onscroll="scrollEvents()" onload="populate()">
+    <!-- Home -->
     <section id="home">
         <div class="home flex">
 
@@ -30,6 +32,8 @@
         </div>
         
     </section>
+
+    <!-- Nav -->
     <nav class="flex nav-container">
         <div class="nav-wrap">
 
@@ -60,9 +64,11 @@
         </div>
         <i class="hamburger-icon" onClick="hamburger()">=</i>
     </nav>
+
+    <!-- About -->
     <section id="about">
         <h1>About</h1>
-        <div class="core-idea">
+        <div class="core-ideas">
             <div class="core-idea">
                 <div class="idea-logo">Logo</div>
                 <h2 class="idea-title">Responsive</h2>
@@ -86,7 +92,7 @@
         </div>
 
         <div class="profile">
-            <div class="profile-image">Image of Will</div>
+            <div class="profile-image"></div>
             <h2 class="profile-title">Get To Know Will.</h2>
             <p class="profile-text">
                 I'm a Front-End Developer working freelance for Motif Magazine in Providence, RI.
@@ -99,39 +105,39 @@
             <div class="skill">
                 <h3 class="skill-title">CSS</h3>
                 <div class="skill-bar">
-                    <div class="progress"></div>
-                    <div class="remaining">85%</div>
+                    <div class="progress" style="width: 75%"></div>
+                    <div class="remaining">75%</div>
                 </div>
             </div>
 
             <div class="skill">
                 <h3 class="skill-title">HTML</h3>
                 <div class="skill-bar">
-                    <div class="progress"></div>
-                    <div class="remaining">90%</div>
+                    <div class="progress" style="width: 70%"></div>
+                    <div class="remaining">70%</div>
                 </div>
             </div>
 
             <div class="skill">
                 <h3 class="skill-title">JavaScript</h3>
                 <div class="skill-bar">
-                    <div class="progress"></div>
-                    <div class="remaining">90%</div>
+                    <div class="progress" style="width: 70%"></div>
+                    <div class="remaining">70%</div>
                 </div>
             </div>
 
             <div class="skill">
                 <h3 class="skill-title">React</h3>
                 <div class="skill-bar">
-                    <div class="progress"></div>
-                    <div class="remaining">70%</div>
+                    <div class="progress" style="width: 60%"></div>
+                    <div class="remaining">60%</div>
                 </div>
             </div>
 
             <div class="skill">
                 <h3 class="skill-title">Photoshop</h3>
                 <div class="skill-bar">
-                    <div class="progress"></div>
+                    <div class="progress" style="width: 80%"></div>
                     <div class="remaining">80%</div>
                 </div>
             </div>
@@ -139,7 +145,7 @@
             <div class="skill">
                 <h3 class="skill-title">Adobe Illustrator</h3>
                 <div class="skill-bar">
-                    <div class="progress"></div>
+                    <div class="progress" style="width: 90%"></div>
                     <div class="remaining">90%</div>
                 </div>
             </div>
@@ -147,7 +153,7 @@
             <div class="skill">
                 <h3 class="skill-title">Animate CC</h3>
                 <div class="skill-bar">
-                    <div class="progress"></div>
+                    <div class="progress" style="width: 80%"></div>
                     <div class="remaining">80%</div>
                 </div>
             </div>
@@ -155,13 +161,15 @@
             <div class="skill">
                 <h3 class="skill-title">Git</h3>
                 <div class="skill-bar">
-                    <div class="progress"></div>
-                    <div class="remaining">50%</div>
+                    <div class="progress" style="width: 40%"></div>
+                    <div class="remaining">40%</div>
                 </div>
             </div>
 
         </div>
     </section>
+
+    <!-- Portfolio -->
     <section id="portfolio">
         <h1>Projects</h1>
         <div class="filter">
@@ -169,10 +177,10 @@
             <button class="filter-button">React.JS</button>
             <button class="filter-button">JavaScript</button>
         </div>
-        <div class="filtered-projects">
-            Projects are filtered into here from object
-        </div>
+        <div class="filtered-projects"></div>
     </section>
+
+    <!-- Contact -->
     <section id="contact">
         <h1>Contact</h1>
         <p class="contact-text">Want to get in touch?</p>
