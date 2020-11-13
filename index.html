@@ -1,0 +1,186 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>William Stiles Portfolio</title>
+  <meta name="description" content="Mark three of my pirvate portfolio site.">
+  <meta name="author" content="William Stiles">
+
+  <link rel="stylesheet" href="index.css">
+  <script src='index.js'></script>
+</head>
+
+<body onload="scrollEvents()">
+    <section id="home">
+        <div class="home flex">
+
+            <h1 class="home-text">
+                I'm William Stiles,<br>
+                a Front End Web Developer.
+            </h1>
+
+            <button
+            class="view-work"
+            id="scroll-to-portfolio"
+            onClick="document.getElementById('portfolio').scrollIntoView()"
+            >My Portfolio</button>
+
+        </div>
+        
+    </section>
+    <nav class="flex nav-container">
+        <div class="nav-wrap">
+
+            <div
+            class="nav-button"
+            id="home-button"
+            onClick="document.getElementById('home').scrollIntoView()"
+            >Home</div>
+    
+            <div
+            class="nav-button"
+            id="about-button"
+            onClick="document.getElementById('about').scrollIntoView()"
+            >About</div>
+    
+            <div
+            class="nav-button"
+            id="portfolio-button"
+            onClick="document.getElementById('portfolio').scrollIntoView()"
+            >Portfolio</div>
+    
+            <div
+            class="nav-button"
+            id="contact-button"
+            onClick="document.getElementById('contact').scrollIntoView()"
+            >Contact</div>
+
+        </div>
+        <i class="hamburger-icon" onClick="hamburger()">=</i>
+    </nav>
+    <section id="about">
+        <h1>About</h1>
+        <div class="core-idea">
+            <div class="core-idea">
+                <div class="idea-logo">Logo</div>
+                <h2 class="idea-title">Responsive</h2>
+                <p class='idea-text'>Taking the mobile first approach lets my layouts pop on any size device.</p>
+            </div>
+            <div class="core-idea">
+                <div class="idea-logo">Logo</div>
+                <h2 class="idea-title">Dynamic</h2>
+                <p class='idea-text'>My background in animation will enliven any static site.</p>
+            </div>
+            <div class="core-idea">
+                <div class="idea-logo">Logo</div>
+                <h2 class="idea-title">Accessible</h2>
+                <p class='idea-text'>Making sites avaible to all browsers and users is a top priority.</p>
+            </div>
+            <div class="core-idea">
+                <div class="idea-logo">Logo</div>
+                <h2 class="idea-title">Usability</h2>
+                <p class='idea-text'>Read the manual? Effective UX/UI should lead users through the site.</p>
+            </div>
+        </div>
+
+        <div class="profile">
+            <div class="profile-image">Image of Will</div>
+            <h2 class="profile-title">Get To Know Will.</h2>
+            <p class="profile-text">
+                I'm a Front-End Developer working freelance for Motif Magazine in Providence, RI.
+                My tenacity and willingness to learn is unquenchable, I use this to create emmersive UI effects and responsive user experinces.
+                "Link" Let's collaborate! "Link"</p>
+
+        </div>
+
+        <div class="skills">
+            <div class="skill">
+                <h3 class="skill-title">CSS</h3>
+                <div class="skill-bar">
+                    <div class="progress"></div>
+                    <div class="remaining">85%</div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <h3 class="skill-title">HTML</h3>
+                <div class="skill-bar">
+                    <div class="progress"></div>
+                    <div class="remaining">90%</div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <h3 class="skill-title">JavaScript</h3>
+                <div class="skill-bar">
+                    <div class="progress"></div>
+                    <div class="remaining">90%</div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <h3 class="skill-title">React</h3>
+                <div class="skill-bar">
+                    <div class="progress"></div>
+                    <div class="remaining">70%</div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <h3 class="skill-title">Photoshop</h3>
+                <div class="skill-bar">
+                    <div class="progress"></div>
+                    <div class="remaining">80%</div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <h3 class="skill-title">Adobe Illustrator</h3>
+                <div class="skill-bar">
+                    <div class="progress"></div>
+                    <div class="remaining">90%</div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <h3 class="skill-title">Animate CC</h3>
+                <div class="skill-bar">
+                    <div class="progress"></div>
+                    <div class="remaining">80%</div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <h3 class="skill-title">Git</h3>
+                <div class="skill-bar">
+                    <div class="progress"></div>
+                    <div class="remaining">50%</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section id="portfolio">
+        <h1>Projects</h1>
+        <div class="filter">
+            <button class="filter-button">All</button>
+            <button class="filter-button">React.JS</button>
+            <button class="filter-button">JavaScript</button>
+        </div>
+        <div class="filtered-projects">
+            Projects are filtered into here from object
+        </div>
+    </section>
+    <section id="contact">
+        <h1>Contact</h1>
+        <p class="contact-text">Want to get in touch?</p>
+        <input class="name" type="text" placeholder="Name"/>
+        <input class="email" type="email" placeholder="Email"/>
+        <input class="message" type="text" placeholder="Your Message"/>
+        <button class="submit" type="submit">Submit</button>
+    </section>
+
+</body>
+</html>
