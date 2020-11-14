@@ -111,7 +111,25 @@
 .modal-slide-image {
     display: none;
 }
+.next-slide, .previous-slide {
+    position: relative;
+    z-index: 100;
+    display: block;
+    width: 50px;
+    font-size: 30pt;
+    padding: 10px;
+    background-color: rgba(231, 215, 173, .5);
+}
 
+.previous-slide {
+    top: -20px;
+    left: -45%;
+}
+
+.next-slide {
+    top: -80px;
+    right: -45%;
+}
 .current-slide {
     display: block;
     position: relative;

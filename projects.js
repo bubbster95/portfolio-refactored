@@ -457,6 +457,8 @@ modal = (project, projects) => {
             veiwGit.addEventListener('click', () => { goToLink(objArr[project].info.gitHub) });
             textBox.appendChild(veiwGit);
         }
+        
+        currentSlide(0, modal)
     }
 }
 
@@ -465,7 +467,7 @@ let slideIndex = 1;
 
 plusSlide = (n, modal) => { showSlides(slideIndex += n, modal); }
 
-// currentSlide = (n, modal) => { showSlides(slideIndex = n, modal); }
+currentSlide = (n, modal) => { showSlides(slideIndex = n, modal); }
 
 showSlides = (n, modal) => {
     // Change Slides
