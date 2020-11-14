@@ -1,0 +1,36 @@
+/* Home */
+#home{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding-top: 0px;
+    background-color: rgb(43, 48, 58);
+}
+
+.home {
+    width: 100%;
+    height: 100%;
+}
+
+.home-text {
+    color: white;
+    font-size: 16pt;
+}
+
+.view-work {
+    margin: 20px;
+    font-size: 10pt;
+}
+
+@media screen and (min-width: 600px) {
+    .home-text {
+        font-size: 35pt;
+    }
+
+    .view-work {
+        margin: 25px;
+        font-size: 20pt;
+    }
+}
+/* Home End */

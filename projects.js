@@ -3,7 +3,7 @@ const objArr = {
         languages: ['React.js', 'JavaScript', 'Design'],
         thumbnail: {
             title: 'Bouq-A-Okay',
-            url: 'assets/Thumbnails/Bouquet.gif',
+            src: 'assets/Thumbnails/Bouquet.gif',
             description: 'React.js / JavaScript',
             alt: 'Bouq-A-Okay thumbnail.'
         },
@@ -12,7 +12,9 @@ const objArr = {
             subHead: 'E-commerce Site',
             summary: `Bouq-A-Okay offers a unique way to pick flowers and build a Bouquet.
             As my first major React.js project there were many small hurtles to overcome.
-            Most notably, learning effecient ways to pass state and props across the DOM posed a formidable challenge.`
+            Most notably, learning effecient ways to pass state and props across the DOM posed a formidable challenge.`,
+            url: 'https://bouq-a-okay.netlify.app/',
+            gitHub: 'https://github.com/bubbster95/Bouquet_Okay'
         },
         images:[
             ['assets/Gallery/Bouq-a-okay/BouqHomePage-min.png',
@@ -41,16 +43,18 @@ const objArr = {
         languages: ['JavaScript', 'Design'],
         thumbnail: {
             title: 'Disco Dude',
-            url: 'assets/Thumbnails/DiscoGif.gif',
+            src: 'assets/Thumbnails/DiscoGif.gif',
             description: 'JavaScript / Animation',
             alt: 'Disco Dude thumbnail'
         }, 
         info: {
-            title: 'Bouq-A-Okay',
-            subHead: 'E-commerce Site',
-            summary: `Bouq-A-Okay offers a unique way to pick flowers and build a Bouquet.
-            As my first major React.js project there were many small hurtles to overcome.
-            Most notably, learning effecient ways to pass state and props across the DOM posed a formidable challenge.`
+            title: 'Disco Dude',
+            subHead: 'Vanilla Javascript Browser Game',
+            summary: `Using my background in animation allowed for fun graphics on an otherwise simple game.
+            As my first large scale Javascript program this project taught me a lot.
+            Most importantly I learned about timing and updating the DOM.`,
+            url: 'https://disco-dude.netlify.app/',
+            gitHub: 'https://github.com/bubbster95/DiscoDude'
         },
         images:[
             ['assets/Gallery/DiscoDude/Target.gif',
@@ -75,16 +79,18 @@ const objArr = {
         languages: ['JavaScript', 'Design'],
         thumbnail: {
             title: 'Wood Turner\'s Calculator',
-            url: 'assets/Thumbnails/TurnersGif.gif',
+            src: 'assets/Thumbnails/TurnersGif.gif',
             description: 'JavaScript / Design',
             alt: 'Wood Turners Calculator thumbnail.'
         },
         info: {
-            title: 'Bouq-A-Okay',
-            subHead: 'E-commerce Site',
-            summary: `Bouq-A-Okay offers a unique way to pick flowers and build a Bouquet.
-            As my first major React.js project there were many small hurtles to overcome.
-            Most notably, learning effecient ways to pass state and props across the DOM posed a formidable challenge.`
+            title: 'Wood Turner\'s Calculator',
+            subHead: 'A tool for calculating concentric rings',
+            summary: `This tool is used to calculate the dimensions of trapizoids used in wood working.
+            Easily the toughest part about carving segmented bowls is calculating the rings properly.
+            The main hurdle for this project was creating blueprints to scale using pixel to inch conversions.`,
+            url: 'https://wood-turners-calculator.netlify.app/',
+            gitHub: 'https://github.com/bubbster95/segmented-ring-calculator'
         },
         images:[
             ['assets/Gallery/turners-calculator/WebVase.png',
@@ -109,16 +115,18 @@ const objArr = {
         languages: ['React.js', 'JavaScript', 'Design'],
         thumbnail: {
             title: 'Infinite Scroll React',
-            url: 'assets/Thumbnails/InfiniteScroll.gif',
+            src: 'assets/Thumbnails/InfiniteScroll.gif',
             description: 'React.js / JavaScript',
             alt: 'Infinite Scroll React thumbnail.'
         },
         info: {
-            title: 'Bouq-A-Okay',
-            subHead: 'E-commerce Site',
-            summary: `Bouq-A-Okay offers a unique way to pick flowers and build a Bouquet.
-            As my first major React.js project there were many small hurtles to overcome.
-            Most notably, learning effecient ways to pass state and props across the DOM posed a formidable challenge.`
+            title: 'Infinite Scroll React',
+            subHead: 'A first look at React',
+            summary: `This project was to acomplish two goals.
+            First, to begin learning React in a simple environment.
+            Second, to create an infintely generated list of users with randomly generated profiles and names.`,
+            url: 'https://wills-infinite-scroll.netlify.app/',
+            gitHub: 'https://github.com/bubbster95/Infinte-Scroll'
         },
         images:[
             ['assets/Gallery/InfiniteScroll/InfiniteScroll.png',
@@ -139,16 +147,18 @@ const objArr = {
         languages: ['JavaScript', 'Design'],
         thumbnail: {
             title: 'Old Portfolio Site',
-            url: 'assets/Thumbnails/PortfolioGif.gif', 
+            src: 'assets/Thumbnails/PortfolioGif.gif', 
             description: 'JavaScript / Design',
             alt: 'Old Portfolio Site thumbnail.'
         },
         info: {
-            title: 'Bouq-A-Okay',
-            subHead: 'E-commerce Site',
-            summary: `Bouq-A-Okay offers a unique way to pick flowers and build a Bouquet.
-            As my first major React.js project there were many small hurtles to overcome.
-            Most notably, learning effecient ways to pass state and props across the DOM posed a formidable challenge.`
+            title: 'Portfolio Site Mark 1',
+            subHead: 'Programming / Design portfolio',
+            summary: `This is the first itiration of my personal porfolio using vanilla Javascript.
+            The main Technical hurtle of this project was creating tiles generated from an object that open a corresponding panel.
+            The elements inside the pannel are also object oriented.`,
+            url: 'https://william-stiles.netlify.app',
+            gitHub: 'https://github.com/bubbster95/Portfolio-Site'
         },
         images:[
             ['assets/Gallery/PortfolioSite/WillStilesSquare.png',
@@ -178,16 +188,16 @@ const objArr = {
         languages: ['JavaScript', 'Design'],
         thumbnail: {
             title: 'Motif Magazine',
-            url: 'assets/Gallery/Motif/FoodCover.jpg',
+            src: 'assets/Gallery/Motif/FoodCover.jpg',
             description: 'React.js / JavaScript',
             alt: 'Motif Magazine portfolio thumbnail.'
         },
         info: {
-            title: 'Bouq-A-Okay',
-            subHead: 'E-commerce Site',
-            summary: `Bouq-A-Okay offers a unique way to pick flowers and build a Bouquet.
-            As my first major React.js project there were many small hurtles to overcome.
-            Most notably, learning effecient ways to pass state and props across the DOM posed a formidable challenge.`
+            title: 'Motif Magazine',
+            subHead: 'Lead Design Portfolio',
+            summary: `As a freelance designer for Motif I generated a total of 12 complete issues as Creative Director.
+            My work for Motif continues as a freelance Web Developer.
+            The challenge now is to merge my knowlege of programming and design to work with wordpress sites. `
         }, 
         images:[
             ['Food Issue Cover',
@@ -238,16 +248,16 @@ const objArr = {
         languages: ['Design'],
         thumbnail: {
             title: 'Khoo Design',
-            url: 'assets/Thumbnails/KhooStyle.png',
+            src: 'assets/Thumbnails/KhooStyle.png',
             description: 'Design',
             alt: 'Khoo Design thumbnail'
         }, 
         info: {
-            title: 'Bouq-A-Okay',
-            subHead: 'E-commerce Site',
-            summary: `Bouq-A-Okay offers a unique way to pick flowers and build a Bouquet.
-            As my first major React.js project there were many small hurtles to overcome.
-            Most notably, learning effecient ways to pass state and props across the DOM posed a formidable challenge.`
+            title: 'Khoo Design',
+            subHead: 'Design Porfolio',
+            summary: `I work for Khoo as a freelance Designer.
+            My work spans from large format advertisments to small print collatoral such as table tents.
+            The most challenging project was a complete overhaul of Khoo's dine in menu, consisting of nine pages packed with text.`
         },
         images:[
             ['assets/Gallery/Khoo/SundayKhoo.jpg',
@@ -277,16 +287,16 @@ const objArr = {
         languages: ['Design'],
         thumbnail: {
             title: 'Animation',
-            url: 'assets/Thumbnails/disco-dude.gif',
+            src: 'assets/Thumbnails/disco-dude.gif',
             description: 'Animation',
             alt: 'Animation Thumbnail'
         }, 
         info: {
             title: 'Animation',
             subHead: 'A portfolio of movement.',
-            summary: `Bouq-A-Okay offers a unique way to pick flowers and build a Bouquet.
-            As my first major React.js project there were many small hurtles to overcome.
-            Most notably, learning effecient ways to pass state and props across the DOM posed a formidable challenge.`
+            summary: `As a student I studied and created animations.
+            Now I use animation for my own projects when I need to add some flair.
+            Aditionally I have worked some freelance gigs as an animator.`
         },
         images:[
             ['assets/Gallery/DiscoDude/disco-dude.gif',
@@ -318,7 +328,7 @@ populate = () => {
 
         let projectImage = document.createElement('Div');
         projectImage.className = 'project-image';
-        projectImage.style.backgroundImage = `url(${objArr[project].thumbnail.url})`;
+        projectImage.style.backgroundImage = `url(${objArr[project].thumbnail.src})`;
         projectImage.alt = `${objArr[project].thumbnail.alt}`;
         projectWrapper.appendChild(projectImage);
 
@@ -364,6 +374,7 @@ removeVisibilty = (e) => {
 
 modal = (project, projects) => {
     if (document.getElementById(project + '-modal')) {
+        document.getElementById(project + '-close-box').style.display = 'block';
         document.getElementById(project + '-modal').style.display = 'block';
     } else {
         let modal = document.createElement('DIV');
@@ -371,34 +382,63 @@ modal = (project, projects) => {
         modal.id = project + '-modal';
         projects.appendChild(modal);
 
+        let closeBox = document.createElement('DIV');
+        closeBox.className = 'close-box';
+        closeBox.id = project + '-close-box';
+        closeBox.addEventListener('click', () => {closeModal(project)})
+        projects.appendChild(closeBox)
+
         let close = document.createElement('BUTTON');
         close.className = 'close-modal';
         close.innerHTML = 'X';
-        close.addEventListener('click', () => {closeModal(project)})
+        close.addEventListener('click', () => {closeModal(project)});
         modal.appendChild(close);
 
         let carosel = document.createElement('DIV');
         carosel.className = 'carosel';
         modal.appendChild(carosel)
 
+        let textBox = document.createElement('DIV');
+        textBox.className = 'modal-text';
+        modal.appendChild(textBox)
+
         let title = document.createElement('H1');
         title.className = 'modal-title'
         title.innerHTML = objArr[project].info.title;
-        modal.appendChild(title)
+        textBox.appendChild(title)
 
         let subHead = document.createElement('H3');
         subHead.className = 'modal-sub';
         subHead.innerHTML = objArr[project].info.subHead;
-        modal.appendChild(subHead)
+        textBox.appendChild(subHead)
 
         let summary = document.createElement('P');
         summary.className = 'modal-summary';
         summary.innerHTML = objArr[project].info.summary
-        modal.appendChild(summary)
-        console.log(modal)
+        textBox.appendChild(summary)
+
+        if (objArr[project].info.url){
+            let viewSite = document.createElement('BUTTON');
+            viewSite.className = 'modal-view-site';
+            viewSite.innerHTML = 'View Site';
+            viewSite.addEventListener('click', () => { goToLink(objArr[project].info.url) });
+            textBox.appendChild(viewSite);
+        }
+        if (objArr[project].info.gitHub) {
+            let veiwGit = document.createElement('BUTTON');
+            veiwGit.className = 'modal-view-git';
+            veiwGit.innerHTML = 'View GitHub';
+            veiwGit.addEventListener('click', () => { goToLink(objArr[project].info.gitHub) });
+            textBox.appendChild(veiwGit);
+        }
     }
 }
 
 closeModal = (project) => {
+    document.getElementById(project + '-close-box').style.display = 'none';
     document.getElementById(project + '-modal').style.display = 'none';
+}
+
+goToLink = (link) => {
+    window.open(link, '_blank');
 }
