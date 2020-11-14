@@ -7,6 +7,13 @@ const objArr = {
             description: 'React.js / JavaScript',
             alt: 'Bouq-A-Okay thumbnail.'
         },
+        info: {
+            title: 'Bouq-A-Okay',
+            subHead: 'E-commerce Site',
+            summary: `Bouq-A-Okay offers a unique way to pick flowers and build a Bouquet.
+            As my first major React.js project there were many small hurtles to overcome.
+            Most notably, learning effecient ways to pass state and props across the DOM posed a formidable challenge.`
+        },
         images:[
             ['assets/Gallery/Bouq-a-okay/BouqHomePage-min.png',
             'Bouq-A-Okay home page for desktop.',
@@ -38,6 +45,13 @@ const objArr = {
             description: 'JavaScript / Animation',
             alt: 'Disco Dude thumbnail'
         }, 
+        info: {
+            title: 'Bouq-A-Okay',
+            subHead: 'E-commerce Site',
+            summary: `Bouq-A-Okay offers a unique way to pick flowers and build a Bouquet.
+            As my first major React.js project there were many small hurtles to overcome.
+            Most notably, learning effecient ways to pass state and props across the DOM posed a formidable challenge.`
+        },
         images:[
             ['assets/Gallery/DiscoDude/Target.gif',
             'Gif of dude dancing',
@@ -64,6 +78,13 @@ const objArr = {
             url: 'assets/Thumbnails/TurnersGif.gif',
             description: 'JavaScript / Design',
             alt: 'Wood Turners Calculator thumbnail.'
+        },
+        info: {
+            title: 'Bouq-A-Okay',
+            subHead: 'E-commerce Site',
+            summary: `Bouq-A-Okay offers a unique way to pick flowers and build a Bouquet.
+            As my first major React.js project there were many small hurtles to overcome.
+            Most notably, learning effecient ways to pass state and props across the DOM posed a formidable challenge.`
         },
         images:[
             ['assets/Gallery/turners-calculator/WebVase.png',
@@ -92,6 +113,13 @@ const objArr = {
             description: 'React.js / JavaScript',
             alt: 'Infinite Scroll React thumbnail.'
         },
+        info: {
+            title: 'Bouq-A-Okay',
+            subHead: 'E-commerce Site',
+            summary: `Bouq-A-Okay offers a unique way to pick flowers and build a Bouquet.
+            As my first major React.js project there were many small hurtles to overcome.
+            Most notably, learning effecient ways to pass state and props across the DOM posed a formidable challenge.`
+        },
         images:[
             ['assets/Gallery/InfiniteScroll/InfiniteScroll.png',
             'Screen Shot of Infinite Scroll landng page',
@@ -114,6 +142,13 @@ const objArr = {
             url: 'assets/Thumbnails/PortfolioGif.gif', 
             description: 'JavaScript / Design',
             alt: 'Old Portfolio Site thumbnail.'
+        },
+        info: {
+            title: 'Bouq-A-Okay',
+            subHead: 'E-commerce Site',
+            summary: `Bouq-A-Okay offers a unique way to pick flowers and build a Bouquet.
+            As my first major React.js project there were many small hurtles to overcome.
+            Most notably, learning effecient ways to pass state and props across the DOM posed a formidable challenge.`
         },
         images:[
             ['assets/Gallery/PortfolioSite/WillStilesSquare.png',
@@ -146,6 +181,13 @@ const objArr = {
             url: 'assets/Gallery/Motif/FoodCover.jpg',
             description: 'React.js / JavaScript',
             alt: 'Motif Magazine portfolio thumbnail.'
+        },
+        info: {
+            title: 'Bouq-A-Okay',
+            subHead: 'E-commerce Site',
+            summary: `Bouq-A-Okay offers a unique way to pick flowers and build a Bouquet.
+            As my first major React.js project there were many small hurtles to overcome.
+            Most notably, learning effecient ways to pass state and props across the DOM posed a formidable challenge.`
         }, 
         images:[
             ['Food Issue Cover',
@@ -199,7 +241,14 @@ const objArr = {
             url: 'assets/Thumbnails/KhooStyle.png',
             description: 'Design',
             alt: 'Khoo Design thumbnail'
-            }, 
+        }, 
+        info: {
+            title: 'Bouq-A-Okay',
+            subHead: 'E-commerce Site',
+            summary: `Bouq-A-Okay offers a unique way to pick flowers and build a Bouquet.
+            As my first major React.js project there were many small hurtles to overcome.
+            Most notably, learning effecient ways to pass state and props across the DOM posed a formidable challenge.`
+        },
         images:[
             ['assets/Gallery/Khoo/SundayKhoo.jpg',
             'Sunday Khoo table tent'
@@ -231,7 +280,14 @@ const objArr = {
             url: 'assets/Thumbnails/disco-dude.gif',
             description: 'Animation',
             alt: 'Animation Thumbnail'
-            }, 
+        }, 
+        info: {
+            title: 'Animation',
+            subHead: 'A portfolio of movement.',
+            summary: `Bouq-A-Okay offers a unique way to pick flowers and build a Bouquet.
+            As my first major React.js project there were many small hurtles to overcome.
+            Most notably, learning effecient ways to pass state and props across the DOM posed a formidable challenge.`
+        },
         images:[
             ['assets/Gallery/DiscoDude/disco-dude.gif',
             'Gif of a Disco Dancer',
@@ -253,7 +309,6 @@ const objArr = {
 populate = () => {
     let projects = document.querySelector('.filtered-projects');
     let objKeys = Object.keys(objArr);
-    console.log('keys', objKeys);
 
     objKeys.map(project => {
         let projectWrapper = document.createElement('DIV');
@@ -270,50 +325,80 @@ populate = () => {
         let projectTitle = document.createElement('H3');
         projectTitle.className = 'project-title';
         projectTitle.innerHTML = `${objArr[project].thumbnail.title}`;
-        projectImage.appendChild(projectTitle)
+        projectWrapper.appendChild(projectTitle)
 
         let projectDescription = document.createElement('P');
         projectDescription.className = 'project-description';
         projectDescription.innerHTML = `${objArr[project].thumbnail.description}`;
-        projectImage.appendChild(projectDescription);
+        projectWrapper.appendChild(projectDescription);
 
         let viewProject = document.createElement('BUTTON');
         viewProject.className = 'view-project-button';
         viewProject.innerHTML = 'View Project';
-        projectImage.appendChild(viewProject);
+        viewProject.addEventListener('click', () => {modal(project, projects)})
+        projectWrapper.appendChild(viewProject);
 
         let items = [projectWrapper, projectImage, projectTitle, viewProject];
-        items.map(item => {
-            item.addEventListener('mouseover', addVisibility)
-            item.addEventListener('mouseout', removeVisibilty)
-        })
+        items.map(item => {item.addEventListener('mouseover', addVisibility)})
+        projectWrapper.addEventListener('mouseout', removeVisibilty)
     })
 }
 
 addVisibility = (e) => {
-    let children;
-    if (e.target.className === 'project-image') {
-        children = e.target.children;
-        e.target.className = 'project-image hover';
-    } else {
-        children = e.target.parentNode.children;
-        console.log(e.target)
+    let parent = e.target.offsetParent
+    let children = parent.children
+    children[0].style.opacity = 0;
+    for (let i=1; i < 4; i++) {
+        children[i].className+= ' hover' 
     }
-    let childrenKeys = Object.keys(children)
-    childrenKeys.map(child => {
-        if (children[child].className === 'project-image hover') {
-            return
-        } else {
-            children[child].className+= ' hover'
-        }
-    })
 }
 
 removeVisibilty = (e) => {
-    let children = e.target.children;
-    e.target.classList.remove('hover')
-    let childrenKeys = Object.keys(children)
-    childrenKeys.map(child => {
-        children[child].classList.remove('hover');
-    })
+    let parent = e.target.offsetParent
+    let children = parent.children
+    children[0].style.opacity = 100;
+    for (let i=1; i < 4; i++) {
+        children[i].classList.remove('hover') 
+    }
+}
+
+modal = (project, projects) => {
+    if (document.getElementById(project + '-modal')) {
+        document.getElementById(project + '-modal').style.display = 'block';
+    } else {
+        let modal = document.createElement('DIV');
+        modal.className = 'modal';
+        modal.id = project + '-modal';
+        projects.appendChild(modal);
+
+        let close = document.createElement('BUTTON');
+        close.className = 'close-modal';
+        close.innerHTML = 'X';
+        close.addEventListener('click', () => {closeModal(project)})
+        modal.appendChild(close);
+
+        let carosel = document.createElement('DIV');
+        carosel.className = 'carosel';
+        modal.appendChild(carosel)
+
+        let title = document.createElement('H1');
+        title.className = 'modal-title'
+        title.innerHTML = objArr[project].info.title;
+        modal.appendChild(title)
+
+        let subHead = document.createElement('H3');
+        subHead.className = 'modal-sub';
+        subHead.innerHTML = objArr[project].info.subHead;
+        modal.appendChild(subHead)
+
+        let summary = document.createElement('P');
+        summary.className = 'modal-summary';
+        summary.innerHTML = objArr[project].info.summary
+        modal.appendChild(summary)
+        console.log(modal)
+    }
+}
+
+closeModal = (project) => {
+    document.getElementById(project + '-modal').style.display = 'none';
 }
