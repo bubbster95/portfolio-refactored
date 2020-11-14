@@ -382,6 +382,7 @@ modal = (project, projects) => {
         modal.id = project + '-modal';
         projects.appendChild(modal);
 
+        // Close Modal
         let closeBox = document.createElement('DIV');
         closeBox.className = 'close-box';
         closeBox.id = project + '-close-box';
@@ -394,10 +395,35 @@ modal = (project, projects) => {
         close.addEventListener('click', () => {closeModal(project)});
         modal.appendChild(close);
 
+
+        // Carosel Slider
         let carosel = document.createElement('DIV');
         carosel.className = 'carosel';
         modal.appendChild(carosel)
 
+        let images = objArr[project].images;
+        images.map((image, index) => {
+            let newImage = document.createElement('IMG');
+            newImage.className = 'modal-slide-image';
+            newImage.src = image[0];
+            newImage.alt = image[1];
+            newImage.id =  index;
+            carosel.appendChild(newImage);
+        })
+
+        let previousSlide = document.createElement('DIV');
+        previousSlide.className = 'previous-slide';
+        previousSlide.innerHTML = '<';
+        previousSlide.addEventListener('click', ()=> {plusSlide(-1, modal)});
+        carosel.appendChild(previousSlide);
+
+        let nextSlide = document.createElement('DIV');
+        nextSlide.className = 'next-slide';
+        nextSlide.innerHTML = '>';
+        nextSlide.addEventListener('click', ()=> {plusSlide(1, modal)});
+        carosel.appendChild(nextSlide);
+
+        // Text Box 
         let textBox = document.createElement('DIV');
         textBox.className = 'modal-text';
         modal.appendChild(textBox)
@@ -433,6 +459,26 @@ modal = (project, projects) => {
         }
     }
 }
+
+/* modal Controls */
+let slideIndex = 1;
+
+plusSlide = (n, modal) => { showSlides(slideIndex += n, modal); }
+
+// currentSlide = (n, modal) => { showSlides(slideIndex = n, modal); }
+
+showSlides = (n, modal) => {
+    // Change Slides
+    let slides = modal.getElementsByClassName("modal-slide-image");
+    if (n > slides.length) {slideIndex = 1} 
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].classList.remove('current-slide') 
+    }
+    slides[slideIndex-1].className+= ' current-slide';
+}
+/* End modal Controls */
+
 
 closeModal = (project) => {
     document.getElementById(project + '-close-box').style.display = 'none';
