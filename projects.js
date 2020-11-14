@@ -264,7 +264,56 @@ populate = () => {
         let projectImage = document.createElement('Div');
         projectImage.className = 'project-image';
         projectImage.style.backgroundImage = `url(${objArr[project].thumbnail.url})`;
-        projectImage.alt = `${objArr[project].thumbnail.alt}`
-        projectWrapper.appendChild(projectImage)
+        projectImage.alt = `${objArr[project].thumbnail.alt}`;
+        projectWrapper.appendChild(projectImage);
+
+        let projectTitle = document.createElement('H3');
+        projectTitle.className = 'project-title';
+        projectTitle.innerHTML = `${objArr[project].thumbnail.title}`;
+        projectImage.appendChild(projectTitle)
+
+        let projectDescription = document.createElement('P');
+        projectDescription.className = 'project-description';
+        projectDescription.innerHTML = `${objArr[project].thumbnail.description}`;
+        projectImage.appendChild(projectDescription);
+
+        let viewProject = document.createElement('BUTTON');
+        viewProject.className = 'view-project-button';
+        viewProject.innerHTML = 'View Project';
+        projectImage.appendChild(viewProject);
+
+        let items = [projectWrapper, projectImage, projectTitle, viewProject];
+        items.map(item => {
+            item.addEventListener('mouseover', addVisibility)
+            item.addEventListener('mouseout', removeVisibilty)
+        })
+    })
+}
+
+addVisibility = (e) => {
+    let children;
+    if (e.target.className === 'project-image') {
+        children = e.target.children;
+        e.target.className = 'project-image hover';
+    } else {
+        children = e.target.parentNode.children;
+        console.log(e.target)
+    }
+    let childrenKeys = Object.keys(children)
+    childrenKeys.map(child => {
+        if (children[child].className === 'project-image hover') {
+            return
+        } else {
+            children[child].className+= ' hover'
+        }
+    })
+}
+
+removeVisibilty = (e) => {
+    let children = e.target.children;
+    e.target.classList.remove('hover')
+    let childrenKeys = Object.keys(children)
+    childrenKeys.map(child => {
+        children[child].classList.remove('hover');
     })
 }

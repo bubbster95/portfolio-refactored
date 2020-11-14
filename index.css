@@ -47,7 +47,7 @@ section {
     font-size: 10pt;
 }
 
-@media (min-width: 600px) {
+@media screen and (min-width: 600px) {
     .home-text {
         font-size: 35pt;
     }
@@ -107,7 +107,7 @@ nav {
     color: rgb(201, 192, 111);
 }
 
-@media (min-width: 500px) {
+@media screen and (min-width: 500px) {
 
     .hamburger-icon {
         display: none;
@@ -225,19 +225,58 @@ nav {
 }
 
 .project-wrapper {
+    position: relative;
+    z-index: 1;
     width: 45vw;
     height: 45vw;
     margin: auto;
 }
 
 .project-image {
+    position: relative;
     background-size: cover;
     background-position: center;
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-@media (min-width: 700px) {
+.view-project-button, .project-title, .project-description{
+    position: relative;
+    transition: all .5s;
+    opacity: 0;
+}
+
+.project-title, .project-description {
+    top: -20px;
+}
+
+.view-project-button {
+    bottom: -20px;
+}
+
+.hover {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    opacity: 100;
+}
+
+.project-image.hover {
+   background-size: 0 0;
+}
+
+.view-project-button {
+    margin: 10px;
+    width: 50%;
+}
+
+
+
+@media screen and (min-width: 700px) {
     .project-wrapper {
         width: 30vw;
         height: 30vw;
