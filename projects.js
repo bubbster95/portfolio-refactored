@@ -1,9 +1,9 @@
 const objArr = {
     bouquet: {
-        languages: ['React.js', 'JavaScript', 'Design'],
+        languages: ['all', 'React.js', 'JavaScript', 'Design'],
         thumbnail: {
             title: 'Bouq-A-Okay',
-            src: 'assets/Thumbnails/Bouquet.gif',
+            src: 'assets/Gallery/Bouq-a-okay/BouqHomePage-min.png',
             description: 'React.js / JavaScript',
             alt: 'Bouq-A-Okay thumbnail.'
         },
@@ -40,10 +40,10 @@ const objArr = {
         ]
     },
     disco: {
-        languages: ['JavaScript', 'Design'],
+        languages: ['all', 'JavaScript', 'Design'],
         thumbnail: {
             title: 'Disco Dude',
-            src: 'assets/Thumbnails/DiscoGif.gif',
+            src: 'assets/Gallery/DiscoDude/DiscoDudeOnStage.png',
             description: 'JavaScript / Animation',
             alt: 'Disco Dude thumbnail'
         }, 
@@ -76,10 +76,10 @@ const objArr = {
         ]
     },
     turner: {
-        languages: ['JavaScript', 'Design'],
+        languages: ['all', 'JavaScript', 'Design'],
         thumbnail: {
             title: 'Wood Turner\'s Calculator',
-            src: 'assets/Thumbnails/TurnersGif.gif',
+            src: 'assets/Gallery/turners-calculator/WebVase.png',
             description: 'JavaScript / Design',
             alt: 'Wood Turners Calculator thumbnail.'
         },
@@ -112,10 +112,10 @@ const objArr = {
         ]
     },
     scroll: {
-        languages: ['React.js', 'JavaScript', 'Design'],
+        languages: ['all', 'React.js', 'JavaScript'],
         thumbnail: {
             title: 'Infinite Scroll React',
-            src: 'assets/Thumbnails/InfiniteScroll.gif',
+            src: 'assets/Gallery/InfiniteScroll/InfiniteScroll.png',
             description: 'React.js / JavaScript',
             alt: 'Infinite Scroll React thumbnail.'
         },
@@ -143,11 +143,11 @@ const objArr = {
             ]
         ]
     },
-    portfolio: {
-        languages: ['JavaScript', 'Design'],
+    oldPortfolio: {
+        languages: ['all', 'JavaScript', 'Design'],
         thumbnail: {
             title: 'Old Portfolio Site',
-            src: 'assets/Thumbnails/PortfolioGif.gif', 
+            src: 'assets/Gallery/PortfolioSite/WillStilesSquare.png', 
             description: 'JavaScript / Design',
             alt: 'Old Portfolio Site thumbnail.'
         },
@@ -183,7 +183,7 @@ const objArr = {
         thumbnail: {
             title: 'Motif Magazine',
             src: 'assets/Gallery/Motif/FoodCover.jpg',
-            description: 'React.js / JavaScript',
+            description: 'JavaScript / Design',
             alt: 'Motif Magazine portfolio thumbnail.'
         },
         info: {
@@ -225,7 +225,7 @@ const objArr = {
         ]
     },
     khoo: {
-        languages: ['Design'],
+        languages: ['all', 'Design'],
         thumbnail: {
             title: 'Khoo Design',
             src: 'assets/Thumbnails/KhooStyle.png',
@@ -264,10 +264,10 @@ const objArr = {
         ]
     },
     animation: {
-        languages: ['Design'],
+        languages: ['all', 'Design'],
         thumbnail: {
             title: 'Animation',
-            src: 'assets/Thumbnails/disco-dude.gif',
+            src: 'assets/Gallery/DiscoDude/disco-dude.gif',
             description: 'Animation',
             alt: 'Animation Thumbnail'
         }, 

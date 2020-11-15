@@ -4,11 +4,11 @@
     margin: 10px;
     color: goldenrod;
     background-color: white;
-    border: solid 3px goldenrod;
+    border: solid 2px goldenrod;
     padding: 10px;
 }
 
-.filter-button:hover {
+.filter-button:hover, .selected-filter {
     color: white;
     background-color: goldenrod;
 }
@@ -18,6 +18,11 @@
     flex-wrap: wrap;
     width: 90%;
     margin: 20px auto;
+}
+
+.project-wrapper.invisible-project {
+    width: 0px;
+    height: 0px;
 }
 
 .project-wrapper {
@@ -68,7 +73,7 @@
     transition: all .2s;
     color: goldenrod;
     background-color: white;
-    border: solid 3px goldenrod;
+    border: solid 2px goldenrod;
     padding: 10px;
 }
 
@@ -77,11 +82,11 @@
     background-color: goldenrod;
 }
 .project-title.hover {
-    top: 10%;
+    top: 15%;
 }
 
 .project-description.hover {
-    top: 20%;
+    top: 25%;
 }
 
 .view-project-button.hover {
@@ -168,13 +173,6 @@
     margin: 10px;
 }
 
-.modal-view-site, .modal-view-git {
-    position: relative;
-    float: left;
-    top: 60px;
-    margin-right: 5px;
-}
-
 .carosel {
     position: relative;
     /* top: -10px; */
@@ -201,6 +199,34 @@
     max-width: 100%;
     max-height: 100%;
 }
+
+
+/* View Site Buttons */
+.modal-view-site, .modal-view-git {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 10px;
+    width: 100px;
+    color: goldenrod;
+    background-color: white;
+    border: solid 2px goldenrod;
+    padding: 10px;
+}
+
+.modal-view-site {
+    left: 0;
+    margin-left: 10px;
+}
+
+.modal-view-git {
+    left: 120px;
+}
+
+.modal-view-site:hover, .modal-view-git:hover {
+    color: white;
+    background-color: goldenrod;
+}
+/* View Site Buttons end */
 /* Modal End */
 
 

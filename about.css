@@ -4,6 +4,12 @@
     display: block;
     width: 100vw;
 }
+
+.contact-link {
+    cursor: pointer;
+    color: rgb(108, 201, 89);
+}
+
 .core-ideas {
     display: flex;
     flex-wrap: wrap;
@@ -15,7 +21,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 20px;
+    margin: auto;
     width: 40%;
 }
 
@@ -23,7 +29,13 @@
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background-color: goldenrod;
+    background-color: rgb(128, 233, 107);
+    background-size: contain;
+    background-position: center;
+}
+
+.idea-text {
+    max-width: 200px;
 }
 
 .profile-image {
@@ -60,22 +72,21 @@
     font-size: 10pt;
     width: 30%;
     height: 100%;
-    background-color: rgb(238, 227, 125);
+    background-color: rgb(128, 233, 107);
 }
 
 .skill-bar {
     width: 70%;
     height: 100%;
-    background-color: rgb(253, 245, 175);
+    background-color: rgba(128, 233, 120, .4);
     display: inline-block;
 }
 
 .progress {
     position: relative;
     z-index: 4;
-    width: 50%;
     height: 100%;
-    background-color: rgba(218, 165, 32, .5);
+    background-image: linear-gradient(to left, rgb(128, 233, 107), rgba(255, 255, 255, .2));
 }
 
 .remaining {

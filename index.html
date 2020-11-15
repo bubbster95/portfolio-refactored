@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="contact.css">
   <script src='index.js'></script>
   <script src='projects.js'></script>
+  <script src='filter.js'></script>
 </head>
 
 <body onscroll="scrollEvents()" onload="populate()">
@@ -74,22 +75,22 @@
         <h1>About</h1>
         <div class="core-ideas">
             <div class="core-idea">
-                <div class="idea-logo">Logo</div>
+                <div class="idea-logo" style="background-image: url('assets/Thumbnails/responsiveIcon.png');"></div>
                 <h2 class="idea-title">Responsive</h2>
                 <p class='idea-text'>Taking the mobile first approach lets my layouts pop on any size device.</p>
             </div>
             <div class="core-idea">
-                <div class="idea-logo">Logo</div>
+                <div class="idea-logo" style="background-image: url('assets/Thumbnails/dynamicIcon.png');"></div>
                 <h2 class="idea-title">Dynamic</h2>
                 <p class='idea-text'>My background in animation will enliven any static site.</p>
             </div>
             <div class="core-idea">
-                <div class="idea-logo">Logo</div>
+                <div class="idea-logo"style="background-image: url('assets/Thumbnails/accessibleIcon.png');"></div>
                 <h2 class="idea-title">Accessible</h2>
                 <p class='idea-text'>Making sites avaible to all browsers and users is a top priority.</p>
             </div>
             <div class="core-idea">
-                <div class="idea-logo">Logo</div>
+                <div class="idea-logo"style="background-image: url('assets/Thumbnails/usabilityIcon.png');"></div>
                 <h2 class="idea-title">Usability</h2>
                 <p class='idea-text'>Read the manual? Effective UX/UI should lead users through the site.</p>
             </div>
@@ -101,7 +102,8 @@
             <p class="profile-text">
                 I'm a Front-End Developer working freelance for Motif Magazine in Providence, RI.
                 My tenacity and willingness to learn is unquenchable, I use this to create emmersive UI effects and responsive user experinces.
-                "Link" Let's collaborate! "Link"</p>
+                <a class="contact-link"onClick="document.getElementById('contact').scrollIntoView()">Let's collaborate</a>!
+            </p>
 
         </div>
 
@@ -177,9 +179,10 @@
     <section id="portfolio">
         <h1>Projects</h1>
         <div class="filter">
-            <button class="filter-button">All</button>
-            <button class="filter-button">React.JS</button>
-            <button class="filter-button">JavaScript</button>
+        <button class="filter-button selected-filter" onclick="filter('all')">All</button>
+            <button class="filter-button" onclick="filter('React.js')">React.JS</button>
+            <button class="filter-button" onclick="filter('JavaScript')">JavaScript</button>
+            <button class="filter-button" onclick="filter('Design')">Design</button>
         </div>
         <div class="filtered-projects"></div>
     </section>
