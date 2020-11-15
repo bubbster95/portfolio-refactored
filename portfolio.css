@@ -1,4 +1,18 @@
 /* Portfolio */
+.filter-button {
+    width: 100px;
+    margin: 10px;
+    color: goldenrod;
+    background-color: white;
+    border: solid 3px goldenrod;
+    padding: 10px;
+}
+
+.filter-button:hover {
+    color: white;
+    background-color: goldenrod;
+}
+
 .filtered-projects {
     display: flex;
     flex-wrap: wrap;
@@ -26,37 +40,63 @@
     align-items: center;
 }
 
-.view-project-button, .project-title, .project-description{
-    position: relative;
-    transition: all .5s;
-    opacity: 0;
-}
-
-
-.project-title, .project-description {
-    top: -100%;
-}
-
 .project-image {
     transition: all .5s;
 }
+.project-title {
+    top: 0%;
+}
 
-.hover {
-    position: relative;
-    top: -70%;
-    bottom: 0;
-    opacity: 100;
+.project-description {
+    top: 5%;
+}
+
+.project-title, .project-description{
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    transition: all .2s;
+    opacity: 0;
 }
 
 .view-project-button {
-    margin: 10px;
+    position: absolute;
+    opacity: 0;
+    bottom: 0;
+    left: 25%;
     width: 50%;
+    transition: all .2s;
+    color: goldenrod;
+    background-color: white;
+    border: solid 3px goldenrod;
+    padding: 10px;
+}
+
+.view-project-button:hover {
+    color: white;
+    background-color: goldenrod;
+}
+.project-title.hover {
+    top: 10%;
+}
+
+.project-description.hover {
+    top: 20%;
+}
+
+.view-project-button.hover {
+    opacity: 100;
+    bottom: 30%;
+}
+
+.hover {
+    opacity: 100;
 }
 
 /* Modal */
 .modal {
     position: fixed;
-    top: 0;
+    top: 10px;
     left: 5vw;
     z-index: 1000;
     width: 90vw;
@@ -76,9 +116,47 @@
 }
 
 .close-modal {
-    position: relative;
-    float: right;
-    margin: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 25pt;
+    color: rgba(218, 165, 32, 0.8);
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.close-modal:hover {
+    cursor: pointer;
+    color: rgba(218, 165, 32, 0.61);
+}
+
+.next-slide, .previous-slide, .close-modal {
+    width: 50px;
+    z-index: 100;
+    border: none;
+    font-family: Impact;
+}
+
+.next-slide, .previous-slide {
+    position: absolute;
+    display: block;
+    bottom: 0;
+    font-size: 30pt;
+    color: white;
+    background-color: rgba(180, 172, 150, 0.5);
+}
+
+.next-slide:hover, .previous-slide:hover {
+    cursor: pointer;
+    color: goldenrod;
+    background-color: rgba(224, 216, 192, 0.5);
+}
+
+.previous-slide {
+    left: 0; 
+}
+
+.next-slide {
+    right: 0;
 }
 
 .modal-text {
@@ -99,37 +177,24 @@
 
 .carosel {
     position: relative;
-    top: -10px;
+    /* top: -10px; */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
     height: 60%;
+    border-bottom: solid 3px goldenrod;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
 }
 
 .modal-slide-image {
     display: none;
 }
-.next-slide, .previous-slide {
-    position: relative;
-    z-index: 100;
-    display: block;
-    width: 50px;
-    font-size: 30pt;
-    padding: 10px;
-    background-color: rgba(231, 215, 173, .5);
-}
 
-.previous-slide {
-    top: -20px;
-    left: -45%;
-}
-
-.next-slide {
-    top: -80px;
-    right: -45%;
-}
 .current-slide {
     display: block;
     position: relative;
