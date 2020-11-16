@@ -203,11 +203,14 @@
     <section id="contact">
         <h1 class="section-head" style="color: white;">Contact</h1>
         <p class="contact-text">Want to get in touch?</p>
-        <div class="contact-form">
-            <input class="name" type="text" placeholder="Name"/>
-            <input class="email" type="email" placeholder="Email"/>
-            <textarea class="message" type="text" placeholder="Your Message"></textarea></textarea><br>
-            <button class="submit" type="submit">Submit</button>
+        <div class="form">
+            <form class="contact-form" data-netlify="true" name="contact" method="POST">
+                <input class="name" type="text" name="name" placeholder="Name">
+                <input class="email" type="text" name="email" placeholder="Email">
+                <textarea class="message" name="message" placeholder="Your Message"></textarea><br />
+                <input class="submit" type="submit" value="Submit">
+                <input class="submit clear" type="reset" value="Clear">
+            </form>
         </div>
         
     </section>

@@ -78,7 +78,7 @@ const objArr = {
     turner: {
         languages: ['all', 'JavaScript', 'Design'],
         thumbnail: {
-            title: 'Wood Turner\'s Calculator',
+            title: 'Turner\'s Calculator',
             src: 'assets/Gallery/turners-calculator/WebVase.png',
             description: 'JavaScript / Design',
             alt: 'Wood Turners Calculator thumbnail.'
