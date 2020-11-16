@@ -39,7 +39,7 @@
 }
 
 .profile-image {
-    margin: 0px auto 20px auto;
+    margin: 15px auto 20px auto;
     width: 300px;
     height: 300px;
     border-radius: 50%;
@@ -49,7 +49,26 @@
 }
 
 .profile-title, .profile-text{
-    margin: 20px;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.profile-text {
+    margin-bottom: 40px;
+}
+
+@media screen and (min-width: 750px) {
+    .core-idea {
+        width: 25%;
+    }
+    .core-ideas {
+        height: 50vh;
+    }
+
+    .profile-text {
+        margin: auto;
+        width: 50%;
+    }
 }
 
 .skills {
@@ -86,7 +105,12 @@
     position: relative;
     z-index: 4;
     height: 100%;
+    transition: all 2s;
     background-image: linear-gradient(to left, rgb(128, 233, 107), rgba(255, 255, 255, .2));
+}
+
+.start {
+    width: 0%;
 }
 
 .remaining {

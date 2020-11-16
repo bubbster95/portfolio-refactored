@@ -1,6 +1,7 @@
 * {
     margin: 0px;
     text-align: center;
+    font-family: 'Poppins', sans-serif;
 }
 
 html, body {
@@ -8,6 +9,10 @@ html, body {
     height: 100vh;
     padding: 0px;
     margin: 0px;
+}
+.section-head {
+    font-weight: 900;
+    font-size: 25pt;
 }
 
 .flex {
@@ -61,7 +66,7 @@ nav {
 .nav-button {
     font-size: 15pt;
     text-align: left;
-    margin: 25px;
+    margin: 35px;
     cursor: pointer;
 }
 

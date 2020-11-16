@@ -179,7 +179,7 @@ const objArr = {
         ]
     },
     motif: {
-        languages: ['JavaScript', 'Design'],
+        languages: ['all', 'JavaScript', 'Design'],
         thumbnail: {
             title: 'Motif Magazine',
             src: 'assets/Gallery/Motif/FoodCover.jpg',

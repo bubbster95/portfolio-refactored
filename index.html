@@ -13,9 +13,13 @@
   <link rel="stylesheet" href="about.css">
   <link rel="stylesheet" href="portfolio.css">
   <link rel="stylesheet" href="contact.css">
+
   <script src='index.js'></script>
   <script src='projects.js'></script>
   <script src='filter.js'></script>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body onscroll="scrollEvents()" onload="populate()">
@@ -24,8 +28,8 @@
         <div class="home flex">
 
             <h1 class="home-text">
-                I'm William Stiles,<br>
-                a Front End Web Developer.
+                Hi, I'm William Stiles,<br>
+                <a style='color:rgb(128, 233, 107);'>Front End Web Developer</a>.
             </h1>
 
             <button
@@ -72,7 +76,7 @@
 
     <!-- About -->
     <section id="about">
-        <h1>About</h1>
+        <h1 class="section-head">About</h1>
         <div class="core-ideas">
             <div class="core-idea">
                 <div class="idea-logo" style="background-image: url('assets/Thumbnails/responsiveIcon.png');"></div>
@@ -111,7 +115,7 @@
             <div class="skill">
                 <h3 class="skill-title">CSS</h3>
                 <div class="skill-bar">
-                    <div class="progress" style="width: 75%"></div>
+                    <div class="progress start" value="75%"></div>
                     <div class="remaining">75%</div>
                 </div>
             </div>
@@ -119,7 +123,7 @@
             <div class="skill">
                 <h3 class="skill-title">HTML</h3>
                 <div class="skill-bar">
-                    <div class="progress" style="width: 70%"></div>
+                    <div class="progress start" value="70%"></div>
                     <div class="remaining">70%</div>
                 </div>
             </div>
@@ -127,7 +131,7 @@
             <div class="skill">
                 <h3 class="skill-title">JavaScript</h3>
                 <div class="skill-bar">
-                    <div class="progress" style="width: 70%"></div>
+                    <div class="progress start" value="70%"></div>
                     <div class="remaining">70%</div>
                 </div>
             </div>
@@ -135,7 +139,7 @@
             <div class="skill">
                 <h3 class="skill-title">React</h3>
                 <div class="skill-bar">
-                    <div class="progress" style="width: 60%"></div>
+                    <div class="progress start" value="60%"></div>
                     <div class="remaining">60%</div>
                 </div>
             </div>
@@ -143,7 +147,7 @@
             <div class="skill">
                 <h3 class="skill-title">Photoshop</h3>
                 <div class="skill-bar">
-                    <div class="progress" style="width: 80%"></div>
+                    <div class="progress start" value="80%"></div>
                     <div class="remaining">80%</div>
                 </div>
             </div>
@@ -151,7 +155,7 @@
             <div class="skill">
                 <h3 class="skill-title">Adobe Illustrator</h3>
                 <div class="skill-bar">
-                    <div class="progress" style="width: 90%"></div>
+                    <div class="progress start" value="90%"></div>
                     <div class="remaining">90%</div>
                 </div>
             </div>
@@ -159,7 +163,7 @@
             <div class="skill">
                 <h3 class="skill-title">Animate CC</h3>
                 <div class="skill-bar">
-                    <div class="progress" style="width: 80%"></div>
+                    <div class="progress start" value="80%"></div>
                     <div class="remaining">80%</div>
                 </div>
             </div>
@@ -167,7 +171,7 @@
             <div class="skill">
                 <h3 class="skill-title">Git</h3>
                 <div class="skill-bar">
-                    <div class="progress" style="width: 40%"></div>
+                    <div class="progress start" value="40%"></div>
                     <div class="remaining">40%</div>
                 </div>
             </div>
@@ -177,7 +181,7 @@
 
     <!-- Portfolio -->
     <section id="portfolio">
-        <h1>Projects</h1>
+        <h1 class="section-head">Projects</h1>
         <div class="filter">
         <button class="filter-button selected-filter" onclick="filter('all')">All</button>
             <button class="filter-button" onclick="filter('React.js')">React.JS</button>
@@ -189,12 +193,28 @@
 
     <!-- Contact -->
     <section id="contact">
-        <h1>Contact</h1>
+        <h1 class="section-head" style="color: white;">Contact</h1>
         <p class="contact-text">Want to get in touch?</p>
-        <input class="name" type="text" placeholder="Name"/>
-        <input class="email" type="email" placeholder="Email"/>
-        <input class="message" type="text" placeholder="Your Message"/>
-        <button class="submit" type="submit">Submit</button>
+        <div class="contact-form">
+            <input class="name" type="text" placeholder="Name"/>
+            <input class="email" type="email" placeholder="Email"/>
+            <textarea class="message" type="text" placeholder="Your Message"></textarea></textarea><br>
+            <button class="submit" type="submit">Submit</button>
+        </div>
+        
+    </section>
+    <section id="footer"><button class="toTop" onClick="document.getElementById('home').scrollIntoView()">^</button>
+        <div class="social-icons">
+            <div
+            class='social-link linkedIn'
+            onclick="window.open('https://www.linkedin.com/in/will-stiles-develops/', '_blank')"
+            ></div>
+
+            <div
+            class='social-link gitHub'
+            onclick="window.open('https://github.com/bubbster95?tab=repositories', '_blank')"
+            ></div>
+        </div>
     </section>
 
 </body>

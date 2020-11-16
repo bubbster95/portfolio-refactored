@@ -1,5 +1,122 @@
 /* Contact */
 #contact {
-    height: 100vh;
+    height: 80vh;
     background-color: rgb(43, 48, 58);
+}
+
+.contact-text {
+    margin: 25px;
+    color: rgb(128, 233, 107);
+}
+
+.contact-form {
+    position: relative;
+    width: 80%;
+    margin: auto;
+}
+
+.name, .email, .message {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    margin: 5px;
+    color: white;
+    text-align: left;
+}
+
+.name::placeholder, .email::placeholder, .message::placeholder {
+    position: relative;
+    text-align: left;
+    color: white;
+    left: 10px;
+}
+
+.name, .email {
+    height: 30px;
+}
+
+.message {
+    height: 200px;
+}
+
+.submit {
+    position: absolute;
+    right: 0;
+    transition: all .5s;
+    margin: 10px 0px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    border: solid 2px white;
+    padding: 10px 20px;
+    font-size: 10pt;
+}
+
+.submit:hover {
+    background-color: rgb(128, 233, 107);
+    color: rgb(43, 48, 58);
+    border-color:  rgb(128, 233, 107);
+}
+
+#footer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(32, 36, 44);
+    height: 100px;
+}
+
+.toTop {
+    position: absolute;
+    top: -25px;
+    font-size: 20pt;
+    color: goldenrod;
+    background-color: rgb(43, 48, 58);
+    border: solid 2px goldenrod;
+    transition: all .5s;
+}
+
+.toTop:hover {
+    color: rgb(43, 48, 58);
+    background-color: goldenrod;
+}
+
+.social-icons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.linkedIn {
+    background: transparent url(assets/linkedInIcon.png) space 0 0;
+}
+
+.gitHub {
+    background: transparent url(assets/gitHubIcon.png) space 0 0;
+}
+
+.social-link {
+    display: inline-block;
+    margin: 0px 20px;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(61, 67, 80);
+    background-size: 50% 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all .5s;
+}
+
+@keyframes scroll {
+    0% {background-position: 20px center;}
+    19% {background-position: 50px center}
+    20%{background-position: 50px -50px}
+    50% {background-position: -100px center;}
+    100% {background-position: center;}
+}
+
+.social-link:hover {
+    animation: scroll .5s;
+    width: 52px;
+    height: 52px;
+    background-color: rgba(128, 233, 107, 0.603);
 }
