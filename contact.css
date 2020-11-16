@@ -12,6 +12,7 @@
 .contact-form {
     position: relative;
     width: 80%;
+    max-width: 600px;
     margin: auto;
 }
 
@@ -135,12 +136,17 @@
          height: 15%;
     }
 
+    .contact-form {
+        max-width: 800px;
+    }
     .name, .email {
         height: 60px;
+        font-size: 25pt;
     }
     
     .message {
         height: 500px;
+        font-size: 25pt;
     }
 
     .submit {
