@@ -148,6 +148,10 @@
         font-size: 30pt;
     }
 
+    .clear {
+        right: 250px;
+    }
+
     .toTop {
         top: -50px;
         width: 80px;
