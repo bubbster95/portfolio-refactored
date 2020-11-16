@@ -167,12 +167,32 @@
 }
 
 .modal-text {
-    margin: 20px;
+    position: relative;
+    background-color: rgba(218, 165, 32, 0.11);
+    height: 40%;
+
 }
 
 .modal-title, .modal-sub {
     text-align: left;
-    margin: 10px;
+    margin: 0px 10px;
+}
+
+.modal-sub {
+    font-size: 10pt;
+    margin-bottom: 10px;
+}
+.modal-summary {
+    position: absolute;
+    overflow-y: auto;
+    height: 50%;
+    margin: 0px 20px;
+}
+
+@media only screen and (min-width: 500px) and (max-device-width: 500px) {
+    .modal-summary {
+        height: 60%;
+    }
 }
 
 .carosel {
@@ -202,17 +222,20 @@
     max-height: 100%;
 }
 
+.video {
+    width: 80%;
+}
 
 /* View Site Buttons */
 .modal-view-site, .modal-view-git {
     position: absolute;
     bottom: 0;
     margin-bottom: 10px;
-    width: 100px;
+    width: 120px;
     color: goldenrod;
     background-color: white;
     border: solid 2px goldenrod;
-    padding: 10px;
+    padding: 1%;
 }
 
 .modal-view-site {
@@ -221,16 +244,18 @@
 }
 
 .modal-view-git {
-    left: 120px;
+    left: 140px;
 }
 
 .modal-view-site:hover, .modal-view-git:hover {
     color: white;
     background-color: goldenrod;
 }
-/* View Site Buttons end */
-/* Modal End */
-
+@media only screen and (min-width: 500px) {
+    .modal-view-site, .modal-view-git {
+        padding: 2%;
+    }
+}
 
 @media screen and (min-width: 700px) {
     .project-wrapper {
@@ -238,3 +263,70 @@
         height: 30vw;
     }
 }
+
+@media screen and (max-device-width: 500px) {
+    .filter-button {
+        width: 200px;
+        margin: 10px;
+        padding: 10px;
+        font-size: 25pt;
+    }
+
+    .project-wrapper {
+        width: 40vw;
+        height: 40vw;
+    }
+
+    .project-title {
+        font-size: 20pt;
+    } 
+    
+    .project-description {
+        font-size: 20pt;
+    }
+    
+    .view-project-button {
+        width: 50%;
+        font-size: 20pt;
+        padding: 10px;
+    }
+    
+    .view-project-button:hover {
+        color: white;
+        background-color: goldenrod;
+    }
+
+    .next-slide, .previous-slide, .close-modal {
+        width: 50px;
+        font-size: 50pt;
+    }
+
+    .next-slide, .previous-slide {
+        padding: 20px;
+    }
+
+    .modal-title {
+        font-size: 40pt;
+    }
+
+    .modal-sub {
+        font-size: 25pt;
+    }
+
+    .modal-summary {
+        font-size: 15pt;
+    }
+
+    .modal-view-site, .modal-view-git {
+        font-size: 20pt;
+        width: 200px;
+    }
+
+    .modal-view-git {
+        left: 220px;
+    }
+}
+/* View Site Buttons end */
+/* Modal End */
+
+

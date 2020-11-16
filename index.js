@@ -1,11 +1,20 @@
 // Adds toggles hamburger menu
 hamburger = () => {
-    let hamburger = document.querySelector('.nav-wrap')
-    console.log(hamburger);
+    let hamburger = document.querySelector('.nav-wrap');
+    let topBar = document.getElementById('top');
+    let middleBar = document.getElementById('middle');
+    let bottomBar = document.getElementById('bottom');
+
     if (hamburger.className === 'nav-wrap') {
         hamburger.className = 'nav-wrap visible';
+        topBar.className+= ' tilt';
+        middleBar.className+= ' fade';
+        bottomBar.className+= ' untilt';
     } else {
         hamburger.className = 'nav-wrap';
+        topBar.classList.remove('tilt');
+        middleBar.classList.remove('fade');
+        bottomBar.classList.remove('untilt')
     }
 }
 

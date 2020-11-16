@@ -66,8 +66,26 @@
     }
 
     .profile-text {
-        margin: auto;
         width: 50%;
+    }
+}
+
+@media screen and (max-device-width: 500px) {
+    .core-idea {
+        width: 50%;
+        height: 50%;
+    }
+
+    .idea-text {
+        max-width: 300px;
+    }
+
+    .core-ideas {
+        height: 50vh;
+    }
+
+    .profile-text {
+        width: 75%;
     }
 }
 

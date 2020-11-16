@@ -182,7 +182,7 @@ const objArr = {
         languages: ['all', 'JavaScript', 'Design'],
         thumbnail: {
             title: 'Motif Magazine',
-            src: 'assets/Gallery/Motif/FoodCover.jpg',
+            src: 'assets/Thumbnails/FoodCover1X1.jpg',
             description: 'JavaScript / Design',
             alt: 'Motif Magazine portfolio thumbnail.'
         },
@@ -267,7 +267,7 @@ const objArr = {
         languages: ['all', 'Design'],
         thumbnail: {
             title: 'Animation',
-            src: 'assets/Gallery/DiscoDude/disco-dude.gif',
+            src: 'assets/Gallery/Animation/ZackatanaSH.png',
             description: 'Animation',
             alt: 'Animation Thumbnail'
         }, 
@@ -398,13 +398,25 @@ modal = (project, projects) => {
 
         // Loop thorugh available images
         let modalImages = objArr[project].images;
+        let RegEx = /.mp4$/;
         modalImages.map((image, index) => {
-            let newImage = document.createElement('IMG');
-            newImage.className = 'modal-slide-image';
-            newImage.src = image[0];
-            newImage.alt = image[1];
-            newImage.id =  index;
-            carosel.appendChild(newImage);
+            if (RegEx.test(image[0])) { 
+                let newVideo = document.createElement('VIDEO');
+                newVideo.className = 'modal-slide-image video';
+                newVideo.controls = true;
+                newVideo.type = 'video/mp4'
+                newVideo.src = image[0];
+                newVideo.alt = image[1];
+                newVideo.id =  index;
+                carosel.appendChild(newVideo);
+            } else {
+                let newImage = document.createElement('IMG');
+                newImage.className = 'modal-slide-image';
+                newImage.src = image[0];
+                newImage.alt = image[1];
+                newImage.id =  index;
+                carosel.appendChild(newImage);
+            }
         })
 
         let previousSlide = document.createElement('DIV');
