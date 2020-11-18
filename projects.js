@@ -11,8 +11,8 @@ const objArr = {
             title: 'Bouq-A-Okay',
             subHead: 'E-commerce Site',
             summary: `Bouq-A-Okay offers a unique way to pick flowers and build a Bouquet.
-            As my first major React.js project there were many small hurtles to overcome.
-            Most notably, learning effecient ways to pass state and props across the DOM posed a formidable challenge.`,
+            As my first <i>major</i> React.js project there were many small hurtles to overcome.
+            Most notably, this poject taught several effecient ways to pass state and props across the DOM.`,
             url: 'https://bouq-a-okay.netlify.app/',
             gitHub: 'https://github.com/bubbster95/Bouquet_Okay'
         },
@@ -49,10 +49,10 @@ const objArr = {
         }, 
         info: {
             title: 'Disco Dude',
-            subHead: 'Vanilla Javascript Browser Game',
+            subHead: 'VJS Browser Game',
             summary: `Using my background in animation allowed for fun graphics on an otherwise simple game.
-            As my first large scale Javascript program this project taught me a lot.
-            Most importantly I learned about timing and updating the DOM.`,
+            Being my first large scale Javascript program this project taught me a lot.
+            Most importantly I learned about timing and updating the DOM using new ES6 features.`,
             url: 'https://disco-dude.netlify.app/',
             gitHub: 'https://github.com/bubbster95/DiscoDude'
         },
@@ -85,10 +85,11 @@ const objArr = {
         },
         info: {
             title: 'Wood Turner\'s Calculator',
-            subHead: 'A tool for calculating concentric rings',
-            summary: `This tool is used to calculate the dimensions of trapizoids used in wood working.
-            Easily the toughest part about carving segmented bowls is calculating the rings properly.
-            The main hurdle for this project was creating blueprints to scale using pixel to inch conversions.`,
+            subHead: 'Calculates segmented rings',
+            summary: `This tool is used to calculate the dimensions of trapizoids (segments).
+            Carving segmented bowls is not easy, calculating the segments that make up a ring improperly can cause the whole project to fail.
+            One challenge for this project was to create a live updating graphic displaying the wall thickness of each ring.
+            The second main hurdle for this project was creating <b>1 to 1</b> blueprints using <b>pixel to inch</b> conversion.`,
             url: 'https://wood-turners-calculator.netlify.app/',
             gitHub: 'https://github.com/bubbster95/segmented-ring-calculator'
         },
@@ -121,10 +122,10 @@ const objArr = {
         },
         info: {
             title: 'Infinite Scroll React',
-            subHead: 'A first look at React',
-            summary: `This project was to acomplish two goals.
-            First, to begin learning React in a simple environment.
-            Second, to create an infintely generated list of users with randomly generated profiles and names.`,
+            subHead: 'React Introduction',
+            summary: `With this project I acomplished two simple goals.
+            First, learn React in a simple environment.
+            Second, create an infinitely generated list of users with randomly generated profiles and names.`,
             url: 'https://wills-infinite-scroll.netlify.app/',
             gitHub: 'https://github.com/bubbster95/Infinte-Scroll'
         },
@@ -154,9 +155,11 @@ const objArr = {
         info: {
             title: 'Portfolio Site Mark 1',
             subHead: 'Programming / Design portfolio',
-            summary: `This is the first itiration of my personal porfolio using vanilla Javascript.
-            The main Technical hurtle of this project was creating tiles generated from an object that open a corresponding panel.
-            The elements inside the pannel are also object oriented.`,
+            summary: `This is the first iteration of my personal porfolio using VJS.
+            A technical hurtle of this project was generating tiles from an object.
+            Each tile opened a corresponding modal on click.
+            To further complicate things, the elements inside the pannel are also generated from an object.
+            This same technique was used to effectively create the project section on this site.`,
             url: 'https://william-stiles.netlify.app',
             gitHub: 'https://github.com/bubbster95/Portfolio-Site'
         },
@@ -189,9 +192,11 @@ const objArr = {
         info: {
             title: 'Motif Magazine',
             subHead: 'Lead Design Portfolio',
-            summary: `As a freelance designer for Motif I generated a total of 12 complete issues as Creative Director.
+            summary: `As a freelance designer for Motif, I generated a total of 12 complete issues as <b>Creative Director</b>.
+            Each issue was 32 pages long, completed in just 2 weeks, with two special issues between 60-70 pages.
             My work for Motif continues as a freelance Web Developer.
-            The challenge now is to merge my knowlege of programming and design to work with wordpress sites. `
+            I merge my knowlege of programming and design to solve issues with various wordpress sites.
+            More often then not, the work includes fixing bugs and adding CSS.`
         }, 
         images:[
             ['assets/Gallery/Motif/FoodCover.jpg',
@@ -235,9 +240,9 @@ const objArr = {
         info: {
             title: 'Khoo Design',
             subHead: 'Design Porfolio',
-            summary: `I work for Khoo as a freelance Designer.
-            My work spans from large format advertisments to small print collatoral such as table tents.
-            The most challenging project was a complete overhaul of Khoo's dine in menu, consisting of nine pages packed with text.`
+            summary: `Khoo commisions freelance design work from me on occasion.
+            My work started with large format advertisements and made it's way to print collatoral such as table tents.
+            The most challenging project was a complete overhaul of Khoo's dine in menu, consisting of nine pages packed with titles, descriptions, prices, pictures and more.`
         },
         images:[
             ['assets/Gallery/Khoo/SundayKhoo.jpg',
@@ -274,9 +279,11 @@ const objArr = {
         info: {
             title: 'Animation',
             subHead: 'A portfolio of movement.',
-            summary: `As a student I studied and created animations.
-            Now I use animation for my own projects when I need to add some flair.
-            Aditionally I have worked some freelance gigs as an animator.`
+            summary: `As a student I studied and created animations in my free time.
+            Now I leverage animation into my projects when I need to add some flair.
+            Aditionally I have worked freelance as an animator, such as the Venga Climbing app.
+            The Venga animation, completed in blender, is of a cellphone in motion.
+            A white phone pops up from the bottom in a few shots, that's my handy work.`
         },
         images:[
             ['assets/Gallery/DiscoDude/disco-dude.gif',

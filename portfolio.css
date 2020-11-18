@@ -2,6 +2,7 @@
 .filter-button {
     width: 100px;
     margin: 10px;
+    cursor: pointer;
     color: goldenrod;
     background-color: white;
     border: solid 2px goldenrod;
@@ -68,6 +69,7 @@
 
 .view-project-button {
     position: absolute;
+    cursor: pointer;
     opacity: 0;
     bottom: 0;
     left: 25%;
@@ -231,6 +233,7 @@
 /* View Site Buttons */
 .modal-view-site, .modal-view-git {
     position: absolute;
+    cursor: pointer;
     bottom: 0;
     margin-bottom: 10px;
     width: 120px;

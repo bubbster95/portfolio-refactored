@@ -124,7 +124,7 @@
     z-index: 4;
     height: 100%;
     transition: all 2s;
-    background-image: linear-gradient(to left, rgb(128, 233, 107), rgba(255, 255, 255, .2));
+    background-image: linear-gradient(to left, rgba(128, 233, 107, .6), rgba(255, 255, 255, .3));
 }
 
 .start {
@@ -133,8 +133,10 @@
 
 .remaining {
     position: relative;
-    top: -20px;
+    top: -25px;
+    right: 5px;
     z-index: 2;
+    font-size: 10pt;
     display: flex;
     align-items: center;
     justify-content: flex-end;

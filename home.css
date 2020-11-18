@@ -19,14 +19,17 @@
 }
 
 .my-portfolio {
+    cursor: pointer;
     transition: all .5s;
     margin: 10px;
+    overflow: hidden;
     color: white;
     background-color: rgba(0, 0, 0, 0);
     border: solid 2px white;
     padding: 10px;
     font-size: 10pt;
 }
+
 
 .my-portfolio:hover {
     background-color: rgb(128, 233, 107);

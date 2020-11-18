@@ -29,11 +29,14 @@
     position: relative;
     text-align: left;
     color: white;
-    left: 10px;
 }
 
 .name, .email {
     height: 30px;
+}
+
+.name, .email, .message {
+    padding: 10px;
 }
 
 .message {
@@ -43,6 +46,7 @@
 .submit {
     position: absolute;
     right: 0;
+    cursor: pointer;
     transition: all .5s;
     margin: 10px 0px;
     color: white;
@@ -53,6 +57,7 @@
 }
 
 .clear {
+    cursor: pointer;
     right: 100px;
 }
 
@@ -72,6 +77,7 @@
 
 .toTop {
     position: absolute;
+    cursor: pointer;
     top: -25px;
     font-size: 20pt;
     color: goldenrod;
@@ -86,6 +92,7 @@
 }
 
 .social-icons {
+    cursor: pointer;
     width: 100%;
     display: flex;
     justify-content: center;
