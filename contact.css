@@ -1,6 +1,6 @@
 /* Contact */
 #contact {
-    height: 80vh;
+    height: 100vh;
     background-color: rgb(43, 48, 58);
 }
 
@@ -72,7 +72,7 @@
     display: flex;
     justify-content: center;
     background-color: rgb(32, 36, 44);
-    height: 100px;
+    padding: 3vh;
 }
 
 .toTop {
@@ -89,6 +89,13 @@
 .toTop:hover {
     color: rgb(43, 48, 58);
     background-color: goldenrod;
+}
+
+.footer-text {
+    color: white;
+    font-size: 15pt;
+    font-family: 'Poppins', sans-serif;
+    margin: 40px;
 }
 
 .social-icons {
@@ -134,9 +141,15 @@
     background-color: rgba(128, 233, 107, 0.603);
 }
 
+@media screen and (max-device-height: 500px) {
+    #contact {
+        height: 140vh;
+    }
+}
+
 @media screen and (max-device-width: 500px) {
     #contact {
-        height: 72vh;
+        height: 100vh;
     }
 
     #footer {
