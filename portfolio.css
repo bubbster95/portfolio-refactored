@@ -264,6 +264,22 @@
     }
 }
 
+@media screen and (max-device-height: 500px) {
+    .modal-view-site {
+        left: unset;
+        right: 130px;
+        top: 5px;
+        bottom: unset;
+    }
+    
+    .modal-view-git {
+        left: unset;
+        right: 5px;
+        top: 5px;
+        bottom: unset;
+    }
+}
+
 @media screen and (max-device-width: 500px) {
     .filter-button {
         width: 200px;
