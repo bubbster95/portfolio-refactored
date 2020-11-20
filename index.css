@@ -75,7 +75,34 @@ nav {
     height: 300px;
 }
 
-@media screen and (min-width: 500px) and (min-device-width: 500px) {
+.bar {
+    position: relative;
+    background-color: white;
+    width: 100%;
+    margin: 5px;
+    height: 10%;
+}
+
+#top, #bottom {
+    transition: all .5s
+}
+
+.tilt {
+    top: 12px;
+    transform: rotate(45deg);
+}
+
+.fade {
+    opacity: 0;
+}
+
+.untilt {
+    top: -4px;
+    transform: rotate(-45deg);
+}
+
+
+@media screen and (min-width: 500px) and (min-device-width: 500px){
 
     .hamburger-icon {
         display: none;
@@ -92,10 +119,33 @@ nav {
 
 }
 
+@media screen and (max-width: 500px) {
+    .hamburger-icon {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .nav-wrap {
+        height: 0px;
+        top: 53px;
+        transition: all .5s;
+    }
+    
+    .nav-button {
+        font-size: 20pt;
+        margin: 20px;
+    }
+
+    .visible {
+        height: 320px;
+    }
+}
+
 @media screen and (max-device-width: 500px) {
     .section-head {
         font-size: 75pt;
     }
+
     p {
         font-size: 25pt;
     }
@@ -118,32 +168,6 @@ nav {
         height: 50px;
         font-size: 50pt;
     }
-
-    .bar {
-        position: relative;
-        background-color: white;
-        width: 100%;
-        margin: 5px;
-        height: 10%;
-    }
-
-    #top, #bottom {
-        transition: all .5s
-    }
-
-    .tilt {
-        top: 15px;
-        transform: rotate(45deg);
-    }
-
-    .fade {
-        opacity: 0;
-    }
-
-    .untilt {
-        top: -5px;
-        transform: rotate(-45deg);
-    }
     
     .nav-wrap {
         height: 0px;
@@ -157,7 +181,7 @@ nav {
     }
 
     .visible {
-        height: 520px;
+        height: 620px;
     }
 }
 
