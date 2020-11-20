@@ -326,23 +326,6 @@
         left: 220px;
     }
 }
-
-@media screen and (max-device-height: 500px) {
-    .modal-view-site, .modal-view-git {
-        top: 5px;
-        bottom: unset;
-        width: 200px;
-    }
-
-    .modal-view-git {
-        left: unset;
-        right: 5px;
-    }
-    .modal-view-site {
-        left: unset;
-        right: 210px;
-    }
-}
 /* View Site Buttons end */
 /* Modal End */
 

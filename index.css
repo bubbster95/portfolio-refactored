@@ -45,7 +45,7 @@ nav {
     right: 5vw;
 }
 
-.nav-wrapper {
+.nav-wrap {
     position: absolute;
     overflow: hidden;
     height: 0px;
