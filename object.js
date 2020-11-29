@@ -1,4 +1,36 @@
 const objArr = {
+    racman: {
+        languages: ['all', 'JavaScript'],
+        thumbnail: {
+            title: 'Racman Inc.',
+            src: 'assets/Gallery/Racman/RacmanSquareHome.png',
+            description: 'JavaScript',
+            alt: 'Racman thumbnail.'
+        },
+        info: {
+            title: 'Racman',
+            subHead: 'Official Business Site',
+            summary: `This website is a simple redsign of the Racman Inc. website.
+            The main hurtle of this project was working with the client to boil down copy into essential information.
+            In addition to programming the site, some photography and logo work was needed to give this site a polished look.`,
+            url: 'https://racman.netlify.app/',
+            gitHub: 'https://github.com/bubbster95/racman'
+        },
+        images:[
+            ['assets/Gallery/Racman/RacmanMobileHome.png',
+            'Racman home page for mobile.'
+            ],
+            ['assets/Gallery/Racman/RacmanWWS.png',
+            'What we service section of Racman website.'
+            ],
+            ['assets/Gallery/Racman/RacmanHamburger.png',
+            'Racman website hamburger.'
+            ],
+            ['assets/Gallery/Racman/RacmanDeskHome.png',
+            'Racman home page for desktop.'
+            ]
+        ]
+    },
     bouquet: {
         languages: ['all', 'React.js', 'JavaScript', 'Design'],
         thumbnail: {
