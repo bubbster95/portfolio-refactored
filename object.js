@@ -2,7 +2,7 @@ const objArr = {
     racman: {
         languages: ['all', 'JavaScript'],
         thumbnail: {
-            title: 'Racman Inc.',
+            title: 'Racman, Inc.',
             src: 'assets/Gallery/Racman/RacmanSquareHome.png',
             description: 'JavaScript',
             alt: 'Racman thumbnail.'
@@ -10,7 +10,7 @@ const objArr = {
         info: {
             title: 'Racman',
             subHead: 'Official Business Site',
-            summary: `This website is a simple redsign of the Racman Inc. website.
+            summary: `This website is a simple re-design of the Racman, Inc. website.
             The main hurtle of this project was working with the client to boil down copy into essential information.
             In addition to programming the site, some photography and logo work was needed to give this site a polished look.`,
             url: 'https://racman.netlify.app/',
@@ -68,6 +68,43 @@ const objArr = {
             ['assets/Gallery/Bouq-a-okay/PickYourFlowers-min.png',
             'Pick your flowers section of the Design a Bouquet page.',
             'https://bouq-a-okay.netlify.app/'
+            ]
+        ]
+    },
+    oldPortfolio: {
+        languages: ['all', 'JavaScript', 'Design'],
+        thumbnail: {
+            title: 'Old Portfolio Site',
+            src: 'assets/Gallery/PortfolioSite/WillStilesSquare.png', 
+            description: 'JavaScript / Design',
+            alt: 'Old Portfolio Site thumbnail.'
+        },
+        info: {
+            title: 'Portfolio Site Mark 1',
+            subHead: 'Programming / Design portfolio',
+            summary: `This is the first iteration of my personal porfolio using VJS.
+            A technical hurtle of this project was generating tiles from an object.
+            Each tile opened a corresponding modal on click.
+            To further complicate things, the elements inside the pannel are also generated from an object.
+            This same technique was used to effectively create the project section on this site.`,
+            url: 'https://william-stiles.netlify.app',
+            gitHub: 'https://github.com/bubbster95/Portfolio-Site'
+        },
+        images:[
+            ['assets/Gallery/PortfolioSite/WillStilesSquare.png',
+            'Portfolio Site Screen Shot'
+            ],
+            ['assets/Gallery/PortfolioSite/MobileFirst.png',
+            'Mobile portfolio site'
+            ],
+            ['assets/Gallery/PortfolioSite/PanelWeb.png',
+            'Responsive panel'
+            ],
+            ['assets/Gallery/PortfolioSite/MobilePanel.png',
+            'Mobile panel'
+            ],
+            ['assets/Thumbnails/DiscoGif.gif',
+            'Disco Dude sillohette gif'
             ]
         ]
     },
@@ -173,43 +210,6 @@ const objArr = {
             ['assets/Gallery/InfiniteScroll/Profile2.png',
             'Screen Shot of Infinite Scroll avatar 2',
             'https://wills-infinite-scroll.netlify.app/'
-            ]
-        ]
-    },
-    oldPortfolio: {
-        languages: ['all', 'JavaScript', 'Design'],
-        thumbnail: {
-            title: 'Old Portfolio Site',
-            src: 'assets/Gallery/PortfolioSite/WillStilesSquare.png', 
-            description: 'JavaScript / Design',
-            alt: 'Old Portfolio Site thumbnail.'
-        },
-        info: {
-            title: 'Portfolio Site Mark 1',
-            subHead: 'Programming / Design portfolio',
-            summary: `This is the first iteration of my personal porfolio using VJS.
-            A technical hurtle of this project was generating tiles from an object.
-            Each tile opened a corresponding modal on click.
-            To further complicate things, the elements inside the pannel are also generated from an object.
-            This same technique was used to effectively create the project section on this site.`,
-            url: 'https://william-stiles.netlify.app',
-            gitHub: 'https://github.com/bubbster95/Portfolio-Site'
-        },
-        images:[
-            ['assets/Gallery/PortfolioSite/WillStilesSquare.png',
-            'Portfolio Site Screen Shot'
-            ],
-            ['assets/Gallery/PortfolioSite/MobileFirst.png',
-            'Mobile portfolio site'
-            ],
-            ['assets/Gallery/PortfolioSite/PanelWeb.png',
-            'Responsive panel'
-            ],
-            ['assets/Gallery/PortfolioSite/MobilePanel.png',
-            'Mobile panel'
-            ],
-            ['assets/Thumbnails/DiscoGif.gif',
-            'Disco Dude sillohette gif'
             ]
         ]
     },
