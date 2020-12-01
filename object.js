@@ -153,7 +153,7 @@ const objArr = {
             alt: 'Wood Turners Calculator thumbnail.'
         },
         info: {
-            title: 'Wood Turner\'s Calculator',
+            title: 'Turner\'s Calculator',
             subHead: 'Calculates segmented rings',
             summary: `This tool is used to calculate the dimensions of trapizoids (segments).
             Carving segmented bowls is not easy, calculating the segments that make up a ring improperly can cause the whole project to fail.

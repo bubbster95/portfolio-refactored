@@ -143,8 +143,6 @@
 
 .social-link:hover {
     animation: scroll .5s;
-    width: 52px;
-    height: 52px;
     background-color: rgba(128, 233, 107, 0.603);
 }
 

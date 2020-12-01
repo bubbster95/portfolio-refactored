@@ -133,7 +133,7 @@
 
 .remaining {
     position: relative;
-    top: -25px;
+    bottom: 25px;
     right: 5px;
     z-index: 2;
     font-size: 10pt;
@@ -142,4 +142,18 @@
     justify-content: flex-end;
 
 }
-/* About End */
+
+@media screen and (max-device-width: 600px) {
+    .skill {
+        height: 50px;
+    }
+    .skill-title {
+        font-size: 15pt;
+    }
+
+    .remaining {
+        font-size: 15pt;
+        bottom: 40px;
+    }
+}
+
