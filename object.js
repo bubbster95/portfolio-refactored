@@ -3,7 +3,7 @@ const objArr = {
         languages: ['all', 'JavaScript'],
         thumbnail: {
             title: 'Racman, Inc.',
-            src: 'assets/Gallery/Racman/RacmanSquareHome.png',
+            src: 'assets/Gallery/Racman/RacmanHomeDesk.png',
             description: 'JavaScript',
             alt: 'Racman thumbnail.'
         },
@@ -17,17 +17,20 @@ const objArr = {
             gitHub: 'https://github.com/bubbster95/racman'
         },
         images:[
-            ['assets/Gallery/Racman/RacmanMobileHome.png',
+            ['assets/Gallery/Racman/RacmanHomeMobile.png',
             'Racman home page for mobile.'
             ],
-            ['assets/Gallery/Racman/RacmanWWS.png',
+            ['assets/Gallery/Racman/RacmanDropMobile.png',
+            'Racman website hamburger dropdwon menu.'
+            ],
+            ['assets/Gallery/Racman/RacmanWWDDesk.png',
             'What we service section of Racman website.'
             ],
-            ['assets/Gallery/Racman/RacmanHamburger.png',
-            'Racman website hamburger.'
+            ['assets/Gallery/Racman/RacmanAboutDesk.png',
+            'Racman about page for desktop.'
             ],
-            ['assets/Gallery/Racman/RacmanDeskHome.png',
-            'Racman home page for desktop.'
+            ['assets/Gallery/Racman/RacmanContactDesk.png',
+            'Racman contact page for desktop.'
             ]
         ]
     },
