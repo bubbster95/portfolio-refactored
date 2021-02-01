@@ -1,4 +1,44 @@
 const objArr = {
+    base: {
+        languages: ['all', 'JavaScript', 'Design', 'Frameworks', 'React.js'],
+        thumbnail: {
+            title: 'Base Weight',
+            src: 'assets/Gallery/base-weight/base-card-tile.png',
+            description: 'Reac.js / Firebase',
+            alt: 'Base Weight thumbnail'
+        },
+        info: {
+            title: 'Base Weight',
+            subHead: 'An E-commerce platform selling outdoors equipment',
+            summary: `Base Weight is an E-commerce site inspired by REI.com.
+            This project taught a number of lessons as follows.
+            Learning to use Firebase was a fairly simple task and allowed safe global storage of information.
+            In addition to being a great place to store data Firebase also offers a secure method of user authentication.
+            This allows for small sites to have users who feel safe when logging in.
+            Lastly this project shows a firm understanding of React and component based coding.
+            My main hurdle with this project was using async functions to allow items to render after the information is loaded from Firebase.
+            For the most part I’ve managed to avoid async functions but it was essential for this project.`,
+            url: 'https://base-weight.netlify.app/',
+            gitHub: 'https://github.com/bubbster95/E-commerce'
+        },
+        images:[
+            ['assets/Gallery/base-weight/homepage-mobile.png',
+            'Base Weight homepage for mobile.'
+            ],
+            ['assets/Gallery/base-weight/category-page-desktop.png',
+            'Category page filtering items on base weight.'
+            ],
+            ['assets/Gallery/base-weight/item-page-desktop.png',
+            'Item page for desktop.'
+            ],
+            ['assets/Gallery/base-weight/sign-in-up-desktop.png',
+            'Sign in page.'
+            ],
+            ['assets/Gallery/base-weight/cart-page-mobile.png',
+            'Cart page.'
+            ]
+        ]
+    },
     racman: {
         languages: ['all', 'JavaScript'],
         thumbnail: {
@@ -35,7 +75,7 @@ const objArr = {
         ]
     },
     bouquet: {
-        languages: ['all', 'React.js', 'JavaScript', 'Design'],
+        languages: ['all', 'React.js', 'JavaScript', 'Design', 'Frameworks'],
         thumbnail: {
             title: 'Bouq-A-Okay',
             src: 'assets/Gallery/Bouq-a-okay/BouqHomePage-min.png',
@@ -184,38 +224,6 @@ const objArr = {
             ]
         ]
     },
-    scroll: {
-        languages: ['all', 'React.js', 'JavaScript'],
-        thumbnail: {
-            title: 'Infinite Scroll React',
-            src: 'assets/Gallery/InfiniteScroll/InfiniteScroll.png',
-            description: 'React.js / JavaScript',
-            alt: 'Infinite Scroll React thumbnail.'
-        },
-        info: {
-            title: 'Infinite Scroll React',
-            subHead: 'React Introduction',
-            summary: `With this project I acomplished two simple goals.
-            First, learn React in a simple environment.
-            Second, create an infinitely generated list of users with randomly generated profiles and names.`,
-            url: 'https://wills-infinite-scroll.netlify.app/',
-            gitHub: 'https://github.com/bubbster95/Infinte-Scroll'
-        },
-        images:[
-            ['assets/Gallery/InfiniteScroll/InfiniteScroll.png',
-            'Screen Shot of Infinite Scroll landng page',
-            'https://wills-infinite-scroll.netlify.app/'
-            ],
-            ['assets/Gallery/InfiniteScroll/Profile 1.png',
-            'Screen Shot of Infinite Scroll avatar 1',
-            'https://wills-infinite-scroll.netlify.app/'
-            ],
-            ['assets/Gallery/InfiniteScroll/Profile2.png',
-            'Screen Shot of Infinite Scroll avatar 2',
-            'https://wills-infinite-scroll.netlify.app/'
-            ]
-        ]
-    },
     motif: {
         languages: ['all', 'JavaScript', 'Design'],
         thumbnail: {
@@ -337,3 +345,37 @@ const objArr = {
         ]
     },
 };
+
+
+// scroll: {
+//     languages: ['all', 'React.js', 'JavaScript'],
+//     thumbnail: {
+//         title: 'Infinite Scroll React',
+//         src: 'assets/Gallery/InfiniteScroll/InfiniteScroll.png',
+//         description: 'React.js / JavaScript',
+//         alt: 'Infinite Scroll React thumbnail.'
+//     },
+//     info: {
+//         title: 'Infinite Scroll React',
+//         subHead: 'React Introduction',
+//         summary: `With this project I acomplished two simple goals.
+//         First, learn React in a simple environment.
+//         Second, create an infinitely generated list of users with randomly generated profiles and names.`,
+//         url: 'https://wills-infinite-scroll.netlify.app/',
+//         gitHub: 'https://github.com/bubbster95/Infinte-Scroll'
+//     },
+//     images:[
+//         ['assets/Gallery/InfiniteScroll/InfiniteScroll.png',
+//         'Screen Shot of Infinite Scroll landng page',
+//         'https://wills-infinite-scroll.netlify.app/'
+//         ],
+//         ['assets/Gallery/InfiniteScroll/Profile 1.png',
+//         'Screen Shot of Infinite Scroll avatar 1',
+//         'https://wills-infinite-scroll.netlify.app/'
+//         ],
+//         ['assets/Gallery/InfiniteScroll/Profile2.png',
+//         'Screen Shot of Infinite Scroll avatar 2',
+//         'https://wills-infinite-scroll.netlify.app/'
+//         ]
+//     ]
+// },
