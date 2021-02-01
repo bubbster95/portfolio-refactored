@@ -1,6 +1,6 @@
 const objArr = {
     base: {
-        languages: ['all', 'JavaScript', 'Design', 'Frameworks', 'React.js'],
+        languages: ['all', 'JavaScript', 'Design', 'Framework', 'React.js'],
         thumbnail: {
             title: 'Base Weight',
             src: 'assets/Gallery/base-weight/base-card-tile.png',
@@ -75,7 +75,7 @@ const objArr = {
         ]
     },
     bouquet: {
-        languages: ['all', 'React.js', 'JavaScript', 'Design', 'Frameworks'],
+        languages: ['all', 'React.js', 'JavaScript', 'Design', 'Framework'],
         thumbnail: {
             title: 'Bouq-A-Okay',
             src: 'assets/Gallery/Bouq-a-okay/BouqHomePage-min.png',
