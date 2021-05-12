@@ -32,9 +32,9 @@
 
 
 .my-portfolio:hover {
-    background-color: rgb(128, 233, 107);
+    background-color: rgba(128, 233, 107);
     color: rgb(43, 48, 58);
-    border-color:  rgb(128, 233, 107);
+    border-color:  rgba(128, 233, 107);
 }
 
 @media screen and (min-width: 600px) {

@@ -7,7 +7,7 @@
 
 .contact-text {
     margin: 25px;
-    color: rgb(128, 233, 107);
+    color: rgba(128, 233, 107);
 }
 
 .contact-form {
@@ -68,9 +68,9 @@
 }
 
 .submit:hover {
-    background-color: rgb(128, 233, 107);
+    background-color: rgba(128, 233, 107);
     color: rgb(43, 48, 58);
-    border-color:  rgb(128, 233, 107);
+    border-color:  rgba(128, 233, 107);
 }
 
 #footer {
@@ -87,15 +87,15 @@
     cursor: pointer;
     top: -25px;
     font-size: 20pt;
-    color: goldenrod;
+    color: rgb(168, 125, 15);
     background-color: rgb(43, 48, 58);
-    border: solid 2px goldenrod;
+    border: solid 2px rgb(168, 125, 15);
     transition: all .5s;
 }
 
 .toTop:hover {
     color: rgb(43, 48, 58);
-    background-color: goldenrod;
+    background-color: rgb(168, 125, 15);
 }
 
 .footer-text {

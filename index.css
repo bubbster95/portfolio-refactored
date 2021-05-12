@@ -35,7 +35,7 @@ nav {
     height: 50px;
     color: white;
     background-color: rgb(43, 48, 58);
-    border-bottom: 3px solid rgb(128, 233, 107);
+    border-bottom: 3px solid rgba(128, 233, 107);
 }
 
 .hamburger-icon {
@@ -51,7 +51,7 @@ nav {
     height: 0px;
     width: 100%;
     top: 53px;
-    background-color: rgb(44, 54, 71);
+    background-color: rgb(43, 48, 58);
 }
 
 .fixed {
@@ -67,7 +67,7 @@ nav {
 }
 
 .nav-button:hover, .active {
-    color: goldenrod;
+    color: rgb(168, 125, 15);
 }
 
 
@@ -160,7 +160,7 @@ nav {
 
     nav {
         height: 80px;
-        border-bottom: 10px solid rgb(128, 233, 107);
+        border-bottom: 10px solid rgba(128, 233, 107);
     }
     
     .hamburger-icon {

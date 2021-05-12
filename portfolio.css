@@ -3,15 +3,15 @@
     width: 100px;
     margin: 10px;
     cursor: pointer;
-    color: goldenrod;
+    color: rgb(168, 125, 15);
     background-color: white;
-    border: solid 2px goldenrod;
+    border: solid 2px rgb(168, 125, 15);
     padding: 10px;
 }
 
 .filter-button:hover, .selected-filter {
     color: white;
-    background-color: goldenrod;
+    background-color: rgb(168, 125, 15);
 }
 
 .filtered-projects {
@@ -76,15 +76,15 @@
     left: 25%;
     width: 50%;
     transition: all .2s;
-    color: goldenrod;
+    color: rgb(168, 125, 15);
     background-color: white;
-    border: solid 2px goldenrod;
+    border: solid 2px rgb(168, 125, 15);
     padding: 10px;
 }
 
 .view-project-button:hover {
     color: white;
-    background-color: goldenrod;
+    background-color: rgb(168, 125, 15);
 }
 .project-title.hover {
     top: 15%;
@@ -114,7 +114,7 @@
     max-width: 600px;
     height: 90vh;
     margin: auto;
-    background-color: rgb(44, 54, 71);
+    background-color: rgb(43, 48, 58);
 }
 
 .close-box {
@@ -159,7 +159,7 @@
 
 .next-slide:hover, .previous-slide:hover {
     cursor: pointer;
-    color: goldenrod;
+    color: rgb(168, 125, 15);
     background-color: rgba(224, 216, 192, 0.5);
 }
 
@@ -211,7 +211,7 @@
     justify-content: center;
     width: 100%;
     height: 60%;
-    border-bottom: solid 3px goldenrod;
+    border-bottom: solid 3px rgb(168, 125, 15);
     -webkit-user-select: none; /* Safari */        
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* IE10+/Edge */
@@ -240,9 +240,9 @@
     bottom: 0;
     margin-bottom: 10px;
     width: 120px;
-    color: goldenrod;
+    color: rgb(168, 125, 15);
     background-color: white;
-    border: solid 2px goldenrod;
+    border: solid 2px rgb(168, 125, 15);
     padding: 1%;
 }
 
@@ -257,7 +257,7 @@
 
 .modal-view-site:hover, .modal-view-git:hover {
     color: white;
-    background-color: goldenrod;
+    background-color: rgb(168, 125, 15);
 }
 
 @media screen and (min-width: 700px) {
@@ -312,7 +312,7 @@
     
     .view-project-button:hover {
         color: white;
-        background-color: goldenrod;
+        background-color: rgb(168, 125, 15);
     }
 
     .next-slide, .previous-slide, .close-modal {
