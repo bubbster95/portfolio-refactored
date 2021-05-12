@@ -21,7 +21,7 @@ populate = () => {
         projectWrapper.appendChild(projectImage);
 
         // Title
-        let projectTitle = document.createElement('H3');
+        let projectTitle = document.createElement('p');
         projectTitle.className = 'project-title';
         projectTitle.innerHTML = `${objArr[project].thumbnail.title}`;
         projectWrapper.appendChild(projectTitle)
