@@ -4,7 +4,7 @@ const objArr = {
         thumbnail: {
             title: 'Base Weight',
             src: 'assets/Gallery/base-weight/base-card-tile.png',
-            description: 'Reac.js / Firebase',
+            description: 'React.js / Firebase',
             alt: 'Base Weight thumbnail'
         },
         info: {
