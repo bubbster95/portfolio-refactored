@@ -7,7 +7,7 @@
 
 .contact-link {
     cursor: pointer;
-    color: rgb(141, 107, 20);
+    color: rgb(168, 125, 15);
 }
 
 .core-ideas {
@@ -32,6 +32,7 @@
     background-color: rgba(128, 233, 107);
     background-size: contain;
     background-position: center;
+    background-repeat: no-repeat;
 }
 
 .idea-text {
@@ -81,7 +82,7 @@
     }
 
     .core-ideas {
-        height: 50vh;
+        height: 65vh;
     }
 
     .profile-text {
@@ -147,9 +148,9 @@
     .skill {
         height: 50px;
     }
-    .skill-title {
+    /* .skill-title {
         font-size: 15pt;
-    }
+    } */
 
     .remaining {
         font-size: 15pt;
