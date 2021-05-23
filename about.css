@@ -158,3 +158,8 @@
     }
 }
 
+@media screen and (max-device-height: 500px) {
+    .core-ideas {
+        height: 140vh;
+    }
+}
