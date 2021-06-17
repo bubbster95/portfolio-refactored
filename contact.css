@@ -154,7 +154,7 @@
 
 @media screen and (max-device-width: 500px) {
     #contact {
-        height: 1200px;
+        height: 700px;
         overflow-y: auto;
     }
 
@@ -175,30 +175,15 @@
         font-size: 25pt;
     }
 
-    .submit {
-        top: 440px;
-        padding: 20px 40px;
-        font-size: 30pt;
-    }
-
-    .clear {
-        right: 250px;
+    .clear, .submit {
+        /* position: relative; */
+        top: unset;
+        bottom: -25px;
+        margin-top: 25px;
     }
 
     .toTop {
-        top: -50px;
         width: 80px;
-        font-size: 50pt;
     }
 
-    .social-link {
-        height: 100px;
-        width: 100px;
-        margin: 20px 40px;
-    }
-
-    .social-link:hover {
-        height: 105px;
-        width: 105px;
-    }
 }
