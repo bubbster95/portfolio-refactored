@@ -74,46 +74,46 @@ const objArr = {
             ]
         ]
     },
-    bouquet: {
-        languages: ['all', 'React.js', 'JavaScript', 'Design', 'Framework'],
-        thumbnail: {
-            title: 'Bouq-A-Okay',
-            src: 'assets/Gallery/Bouq-a-okay/BouqHomePage-min.png',
-            description: 'React.js / JavaScript',
-            alt: 'Bouq-A-Okay thumbnail.'
-        },
-        info: {
-            title: 'Bouq-A-Okay',
-            subHead: 'E-commerce Site',
-            summary: `Bouq-A-Okay offers a unique way to pick flowers and build a Bouquet.
-            As my first <i>major</i> React.js project there were many small hurtles to overcome.
-            Most notably, this poject taught several effecient ways to pass state and props across the DOM.`,
-            url: 'https://bouq-a-okay.netlify.app/',
-            gitHub: 'https://github.com/bubbster95/Bouquet_Okay'
-        },
-        images:[
-            ['assets/Gallery/Bouq-a-okay/BouqHomePage-min.png',
-            'Bouq-A-Okay home page for desktop.',
-            'https://bouq-a-okay.netlify.app/'
-            ],
-            ['assets/Gallery/Bouq-a-okay/BouqHomeMobile-min.png',
-            'Cart page of Bouq-A-Okay',
-            'https://bouq-a-okay.netlify.app/'
-            ],
-            ['assets/Gallery/Bouq-a-okay/ChooseABouq-min.png',
-            'Choose a Bouquet page.',
-            'https://bouq-a-okay.netlify.app/'
-            ],
-            ['assets/Gallery/Bouq-a-okay/PickYOurPallet-min.png',
-            'Pick your pallet section of the Design a Bouquet page.',
-            'https://bouq-a-okay.netlify.app/'
-            ],
-            ['assets/Gallery/Bouq-a-okay/PickYourFlowers-min.png',
-            'Pick your flowers section of the Design a Bouquet page.',
-            'https://bouq-a-okay.netlify.app/'
-            ]
-        ]
-    },
+    // bouquet: {
+    //     languages: ['all', 'React.js', 'JavaScript', 'Design', 'Framework'],
+    //     thumbnail: {
+    //         title: 'Bouq-A-Okay',
+    //         src: 'assets/Gallery/Bouq-a-okay/BouqHomePage-min.png',
+    //         description: 'React.js / JavaScript',
+    //         alt: 'Bouq-A-Okay thumbnail.'
+    //     },
+    //     info: {
+    //         title: 'Bouq-A-Okay',
+    //         subHead: 'E-commerce Site',
+    //         summary: `Bouq-A-Okay offers a unique way to pick flowers and build a Bouquet.
+    //         As my first <i>major</i> React.js project there were many small hurtles to overcome.
+    //         Most notably, this poject taught several effecient ways to pass state and props across the DOM.`,
+    //         url: 'https://bouq-a-okay.netlify.app/',
+    //         gitHub: 'https://github.com/bubbster95/Bouquet_Okay'
+    //     },
+    //     images:[
+    //         ['assets/Gallery/Bouq-a-okay/BouqHomePage-min.png',
+    //         'Bouq-A-Okay home page for desktop.',
+    //         'https://bouq-a-okay.netlify.app/'
+    //         ],
+    //         ['assets/Gallery/Bouq-a-okay/BouqHomeMobile-min.png',
+    //         'Cart page of Bouq-A-Okay',
+    //         'https://bouq-a-okay.netlify.app/'
+    //         ],
+    //         ['assets/Gallery/Bouq-a-okay/ChooseABouq-min.png',
+    //         'Choose a Bouquet page.',
+    //         'https://bouq-a-okay.netlify.app/'
+    //         ],
+    //         ['assets/Gallery/Bouq-a-okay/PickYOurPallet-min.png',
+    //         'Pick your pallet section of the Design a Bouquet page.',
+    //         'https://bouq-a-okay.netlify.app/'
+    //         ],
+    //         ['assets/Gallery/Bouq-a-okay/PickYourFlowers-min.png',
+    //         'Pick your flowers section of the Design a Bouquet page.',
+    //         'https://bouq-a-okay.netlify.app/'
+    //         ]
+    //     ]
+    // },
     oldPortfolio: {
         languages: ['all', 'JavaScript', 'Design'],
         thumbnail: {
