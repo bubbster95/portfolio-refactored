@@ -1,6 +1,6 @@
 /* Portfolio */
 .filter-button {
-    width: 100px;
+    /* width: 100px; */
     margin: 10px;
     cursor: pointer;
     color: rgb(168, 125, 15);
@@ -239,7 +239,7 @@
     cursor: pointer;
     bottom: 0;
     margin-bottom: 10px;
-    width: 120px;
+    /* width: 120px; */
     color: rgb(168, 125, 15);
     background-color: white;
     border: solid 2px rgb(168, 125, 15);
