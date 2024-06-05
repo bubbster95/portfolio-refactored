@@ -1,34 +1,39 @@
 const objArr = {
-    // climb: {
-    //     languages: ['all', 'JavaScript', 'Framework'],
-    //     thumbnail: {
-    //         title: 'Climb@',
-    //         src: 'assets/Gallery/ClimbAt/climb-at-thumbnail.png',
-    //         description: 'Python / Flask',
-    //         alt: 'Climb-at thumbnail'
-    //     },
-    //     info: {
-    //         title: 'Climb@',
-    //         subHead: 'An app that lets users search for local climbing areas.',
-    //         summary: `Climb@ is a search app inspired by The Mountain Project.
-    //         It works by querying the Open Beta api to find climbing Crags within a certain radious of the given coordinates.
-    //         There is also a feature that uses the google Geodocode api to give a user coordinates based off a provided address.
-    //         The tech stack includes Python as a backend using Flask for routing. 
-    //         The app also leverages Jinja and WTForms with HTMl CSS and JS to complete the front end.`,
-    //         url: 'https://climb-at.herokuapp.com/',
-    //         gitHub: 'https://github.com/bubbster95/climb-at'
-    //     },
-    //     images: [
-    //         ['assets/Gallery/ClimbAt/HomeUnLoggedMobile.PNG',
-    //         'Climb-at Homescreen no user logged in on mobile.'],
-    //         ['assets/Gallery/ClimbAt/HomeUnLoggedMobileMenue.JPG',
-    //         'Climb-at Homescreen mobile menu no use logged in'],
-    //         ['assets/Gallery/ClimbAt/ProfileMobile.JPG',
-    //         'Climb-at Profile on mobile.'],
-    //         ['assets/Gallery/ClimbAt/SearchAddressDesk.JPG',
-    //         'Climb-at search by adress desktop']
-    //     ]
-    // },
+    cvs: {
+        languages: ['all', 'JavaScript', 'Framework'],
+        thumbnail: {
+            title: 'CVS Health',
+            src: 'assets/Gallery/CVSHealth/cvsLogo.jpeg',
+            description: 'Node.js / Angular / Typescript',
+            alt: 'CVS Health Logo'
+        },
+        info: {
+            title: 'CVS Health',
+            subHead: 'Various projects for CVS Health Admin Tools',
+            summary: `At CVS I started as a Node.js developer.
+            For two years I developed API's to manage inventory and query data about products.
+            During the layoff period my role was eliminated and I was switched to a front-end team.
+            There I began work on the modal component shown above. 
+            This component is now used widly across the Health Admin Tool.
+            Using Angular I wrote a single modal that dynamically switched content when the modal.service is called from anywere in the site.
+            All elements displayed in the images above were developed by me alone.
+            This includes API calls as well as te header and footer displayed in the full page views.`,
+            // url: 'https://climb-at.herokuapp.com/',
+            // gitHub: 'https://github.com/bubbster95/climb-at'
+        },
+        images: [
+            ['assets/Gallery/CVSHealth/FullPageWOPopup.png',
+            'Full page including header, create store buffers, and footer.'],
+            ['assets/Gallery/CVSHealth/FullPageWithPopup.png',
+            'Full page including Header, create stor buffers, footer, and popup.'],
+            ['assets/Gallery/CVSHealth/Header.png',
+            'Header asset with CVS Health logo, and username.'],
+            ['assets/Gallery/CVSHealth/Popup.png',
+            'Popup With The words "are you sure you want to cancel" displayed. '],
+            ['assets/Gallery/CVSHealth/StoreRulesBuffer.png',
+            'Store rules buffer is a form that allows users to select buffer times.']
+        ]
+    },
     base: {
         languages: ['all', 'JavaScript', 'Design', 'Framework', 'React.js'],
         thumbnail: {
