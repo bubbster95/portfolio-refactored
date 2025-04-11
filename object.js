@@ -1,23 +1,72 @@
 const objArr = {
+    studoGlob: {
+        languages: ['all', 'JavaScript', 'Framework', 'Design', 'React.js'],
+        thumbnail: {
+            title: 'Studio Glob',
+            src: 'assets/Gallery/StudioGlob/throwingThumbnail.png',
+            description: 'React.js / Css / Responsive Design',
+            alt: 'A spread about pottery throwing with an arm holding a lump of clay and a beautiful woman holding a thrown bowl.'
+        },
+        info: {
+            title: 'Studio Glob',
+            subHead: 'Brand Design and Website Build',
+            summary: `I’ve been working with Studio Glob, a brand new pottery studio in Smithfield RI, and I’m super proud to share the website I built — from scratch! As a developer, there's something really satisfying about taking a blank canvas and turning it into something functional, beautiful, and (most importantly) usable. I had the chance to design a full brand identity, build the website using React, and integrate a booking system so people can easily sign up for classes.
+            It's fully responsive, packed with custom components, and showcases real photos from live classes — taken once things got rolling! The website is also chalk full of hand drawn and css animation done by yours truly.
+            This was one of those projects where design, code, and community all came together in a really rewarding way. Really excited to be able to bring this vision online.`,
+            url: 'https://studioglob.com',
+            // gitHub: 'https://github.com/bubbster95/pottery'
+        },
+        images: [
+            ['assets/Gallery/StudioGlob/carvingChickenDesktop.png',
+            'A scruffy well dressed man carves a clay chicken who doesn\'t look pleased with him in the least bit.'],
+
+            ['assets/Gallery/StudioGlob/carvingChickenMobile.png',
+            'A scruffy well dressed man carves a clay chicken who doesn\'t look pleased with him in the least bit. This time it is mobile sized'],
+
+            ['assets/Gallery/StudioGlob/kittyVaseDesktop.png',
+            'A pair of hands raise out of a blue portal holding a handsome looking vase in the shape of a fat kitty.'],
+
+            ['assets/Gallery/StudioGlob/kittyVaseMobile.png',
+            'A pair of hands raise out of a blue portal holding a handsome looking vase in the shape of a fat kitty. This image is mobile sized'],
+
+            ['assets/Gallery/StudioGlob/navOpen.png',
+            'Not much to see here, just showing what the nav bar looks like when the hanburger menu is open.'],
+
+            ['assets/Gallery/StudioGlob/studioTimeDesktop.png',
+            'A screen shot of an animated clock aproaching a block of clay. In the animation she sculps the clay into a tea pot then smashes it with a hammar. She then sweeps away the dust and jumps aways before another block of clay drops onto her. the animation loops.'],
+
+            ['assets/Gallery/StudioGlob/throwingDesktop.png',
+            'an arm reaches from off the screen holding a wet lump of clay. Below that an beautiful woman is happily holding a bowl she made on the wheel'],
+
+            ['assets/Gallery/StudioGlob/throwingMobile.png',
+            'an arm reaches from off the screen holding a wet lump of clay. Below that an beautiful woman is happily holding a bowl she made on the wheel. This image is the mobile size'],
+            ['assets/Gallery/StudioGlob/wheelThrowingDesktop.png',
+            'A studio member leans over a pottery wheel throwing a pour over for making coffe.']
+        ]
+    },
     cvs: {
         languages: ['all', 'JavaScript', 'Framework'],
         thumbnail: {
             title: 'CVS Health',
-            src: 'assets/Gallery/CVSHealth/cvsLogo.jpeg',
+            src: 'assets/Gallery/CVSHealth/cvsLogo.svg',
             description: 'Node.js / Angular / Typescript',
             alt: 'CVS Health Logo'
         },
         info: {
             title: 'CVS Health',
             subHead: 'Various projects for CVS Health Admin Tools',
-            summary: `At CVS I started as a Node.js developer.
-            For two years I developed API's to manage inventory and query data about products.
-            During the layoff period my role was eliminated and I was switched to a front-end team.
+            summary: `At CVS I started as a Node.js developer. I developed API's to manage inventory and query data about our products.
+            I survived layoffs by cross training and switching to a front-end position on another team.
             There I began work on the modal component shown above. 
+            <br>
             This component is now used widly across the Health Admin Tool.
-            Using Angular I wrote a single modal that dynamically switched content when the modal.service is called from anywere in the site.
-            All elements displayed in the images above were developed by me alone.
-            This includes API calls as well as te header and footer displayed in the full page views.`,
+            I wrote a single modal that dynamically switched content when the modal.service is called from anywere on the site.
+            In addition to the modal all other elements displayed in the images above were my sole contribution to the site.
+            <br>
+            The scope of my work at CVS includes writing and calling API, UI elements such as headers, footers, and full page views with complex and dynamic form creation.
+            I've used an array of different technologies, from Angular.ts, jest, mocha/chai, node.js, express.js, and even a little Java.
+            Our workflow tools consist of Rally, Miro, Figma, MS Teams, and Slack.
+            I have also written countless documentation for onboarding, deployment tutorials, api documentaion and README.md files.`,
             // url: 'https://climb-at.herokuapp.com/',
             // gitHub: 'https://github.com/bubbster95/climb-at'
         },

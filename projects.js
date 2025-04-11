@@ -68,7 +68,6 @@ removeVisibilty = (e) => {
 
 // Populate / Toggle modal from object information
 modal = (project, projects) => {
-
     // If modal exists toggle visibility
     if (document.getElementById(project + '-modal')) {
         showSlides(slideIndex = 1, document.getElementById(project + '-modal'))
@@ -104,6 +103,7 @@ modal = (project, projects) => {
         let modalImages = objArr[project].images;
         let RegEx = /.mp4$/;
         modalImages.map((image, index) => {
+            console.log(image)
             if (RegEx.test(image[0])) { 
                 let newVideo = document.createElement('VIDEO');
                 newVideo.className = 'modal-slide-image video';
@@ -155,22 +155,31 @@ modal = (project, projects) => {
         summary.innerHTML = objArr[project].info.summary
         textBox.appendChild(summary)
 
-        // Create site link button if possible
-        if (objArr[project].info.url){
-            let viewSite = document.createElement('BUTTON');
-            viewSite.className = 'modal-view-site';
-            viewSite.innerHTML = 'View Site';
-            viewSite.addEventListener('click', () => { goToLink(objArr[project].info.url) });
-            textBox.appendChild(viewSite);
+
+        if (!objArr[project].info.gitHub || !objArr[project].info.url) {
+            textBox.classList.add('no-buttons')
+        } else {
+            let buttonWrapper = document.createElement('DIV');
+            buttonWrapper.className = 'modal-button-wrapper'
+            textBox.appendChild(buttonWrapper)
+            // Create site link button if possible
+            if (objArr[project].info.url){
+                let viewSite = document.createElement('BUTTON');
+                viewSite.className = 'modal-view-site';
+                viewSite.innerHTML = 'View Site';
+                viewSite.addEventListener('click', () => { goToLink(objArr[project].info.url) });
+                buttonWrapper.appendChild(viewSite);
+            }
+            // Create Github link button if possible
+            if (objArr[project].info.gitHub) {
+                let veiwGit = document.createElement('BUTTON');
+                veiwGit.className = 'modal-view-git';
+                veiwGit.innerHTML = 'View GitHub';
+                veiwGit.addEventListener('click', () => { goToLink(objArr[project].info.gitHub) });
+                buttonWrapper.appendChild(veiwGit);
+            }
         }
-        // Create Github link button if possible
-        if (objArr[project].info.gitHub) {
-            let veiwGit = document.createElement('BUTTON');
-            veiwGit.className = 'modal-view-git';
-            veiwGit.innerHTML = 'View GitHub';
-            veiwGit.addEventListener('click', () => { goToLink(objArr[project].info.gitHub) });
-            textBox.appendChild(veiwGit);
-        }
+
         showSlides(slideIndex = 1, modal)
     }
 }
